@@ -49,3 +49,111 @@ body, html {
 }
 
 .noformat{text-decoration: none}
+
+.languages{
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 20px
+}
+
+
+.mx{
+  height: 10px;
+  background-size: 100% 100%;
+  background-image: url('../../images/mx.svg');
+}
+
+.au{
+  height: 10px;
+  background-size: 100% 100%;
+  background-image: url('../../images/au.svg');
+}
+
+.ch{
+  height: 10px;
+  background-size: 100% 100%;
+  background-image: url('../../images/cn.svg');
+}
+
+.fr{
+  height: 10px;
+  background-size: 100% 100%;
+  background-image: url('../../images/fr.svg');
+}
+
+.hover-opacity{
+  opacity: 0.3
+}
+
+.hover-opacity:hover{
+  opacity: 1;
+}
+
+.researchSlide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
