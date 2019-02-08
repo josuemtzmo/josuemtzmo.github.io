@@ -20,11 +20,13 @@ function toggleFunction() {
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("menuIcon").className = "fa fa-remove fa-fw";
 }
 
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("menuIcon").className = "fa fa-bars fa-fw";
 }
 
 var slideIndex = 2;
