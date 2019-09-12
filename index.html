@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="shared/js/interaction.js">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="shared/js/translate.js"></script>
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			}
+		};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
     </head>
     <body class="w3-light-grey w3-content" style="max-width:1600px" data-gr-c-s-loaded="true">
@@ -164,113 +174,80 @@
                     Past projects
                 </h3>
                 <div class="w3-col m6" style="text-align:justify">
-                    Most of the 80 percent of untreated global waterwaste ends 
-                    up in the ocean, transported through river plumes. 
-                    River plumes are buoyant plumes of water, which provide
-                    the driving mecanism for the circulation of the coastal 
-                    ocean. Most of the untreated water has the potential to
-                    change the properties of water as: patogens, organic matter,
-                    chemical pollution, salinity, plastic pollution and 
-                    pharmaceuticals. Comonly, the river plume density is smaller 
-                    than the oceanic water allowing the propagation of the river 
-                    plume over large extensions over the coastal ocean.
-                    To understand the dispersion and transport of pollutants 
-                    of the river plumes, I studied the Coatzacoalcos and 
-                    Grijalva-Usumacinta rivers plumes since they are the 
-                    rivers more tainted and with more flux of Mexico, 
-                    respectively. The region where those rivers are located 
-                    have an important seasonal variability due the wind and 
-                    coastal currents. Passive pollutants had the capability to 
-                    disperse from the south Gulf of Mexico to the Missisipi 
-                    River mouth with a concentration of 0.01% of its original. 
-                    This value may look insignificant, however in a lot of cases
-                    the tolerance limit of certain pollutants is under
-                    picograms.
+                    River runoff plays a crucial role in the transport of sediments, nutrients, and pollutants into the coastal oceans. Some of the rivers in the Gulf of Mexico (GoM) carrying the largest volumes of anthropogenic pollutants include the Mississippi, Grijalva-Usumacinta and Coatzacoalcos rivers. Using a high-resolution regional model (MITgcm), we investigate the temporal and spatial variability of the passive tracer transport, north and south of the river mouth, along the coast. The Coatzacoalcos river flow forcing is implemented as a boundary condition with a climatology corresponding to the flow upstream of the river mouth.
+					Our results show that after one year of simulation, the area covered by concentrations larger than 0.1% of the passive pollutant extends over 656,000 km$^2$ (45% of the surface area of the GoM), while concentrations larger than 10% extend over 16,000 km$^2$ from the major cities of Veracruz, Veracruz to Ciudad del Carmen, Campeche in approximately 8 months.
+					As studies of the in situ environmental impact in the region are limited, the coastal areas with higher passive tracer concentration  could present ecological risks (eutrophication or hypoxia) and indicate a potential regional economic loss.
                 </div>
 
                 <div class="w3-col m6">
                     <div class="w3-col w3-center m12">
-                        <img src="./videos/ptracer.mp4" type="video/mp4" width="100%" height="100%" controls onclick="onClick(this)" class="w3-hover-opacity" alt="Passive pollutant dispersion on the Gulf of Mexico">
+						<br>
+						<video src="./videos/ptracer.mp4" type="video/mp4" width="100%" height="100%" controls class="w3-hover-opacity" alt="Passive pollutant dispersion on the Gulf of Mexico"></video>
                     </div>
+					<div class="w3-col w3-center m12 collabs">
+						<h5>Collaborators:</h5>
+						<ul class="nolistformat">
+							<li class="nolistformat">Angel Ruiz Angulo</li>
+							<li class="nolistformat">Karina Ramos-Musalem</li>
+							<li class="nolistformat">Jorge Zavala-Hidalgo</li>
+						</ul>
+					</div>
+
                 </div>
             </div>
 
             <div class="w3-row-padding w3-center researchSlide fade">
                 <h3 class="w3-center  w3-padding-32">
-                     Current Project
+                     Main Project
                 </h3>
                 <div class="w3-col m6" style="text-align:justify">
-                        I'm current developing a new methodology to 
-                        decompose transient kinetic energy into oceanic 
-                        processes. The focus of this project is on transient 
-                        kinetic energy contained in mesoscale eddies. 
-                        This methodology uses a new eddy tracking 
-                        algorithm, where the basic premise is that all 
-                        eddies can be optimal fitted by a Gaussian feature. 
-                        Afterwards, through a geostrophical approximation, 
-                        the kinetic energy contained in the eddies can be 
-                        calculated. 
-                        Our method is effective in determining how much energy
-                        is contained in mesoscale eddy-like features. 
-                        Synthetic data was used to assess the sensitivity and 
-                        energy content by this method.  
-                        Additionally, the algorithm was implemented to analyze 
-                        trends of transient kinetic energy in the Southern 
-                        Ocean using the Satellite SSHa (Aviso+) and 
-                        state-of-the-art $1/10$ degree simulation (ACCESS-OM2). 
-                        The presented results show an increasing trend of 
-                        transient kinetic energy inside eddies and also an 
-                        increase of the eddy amplitude in the Southern Ocean. 
+					I'm current developing a new methodology to
+					decompose transient kinetic energy into oceanic
+					processes. The focus of this project is on transient
+					kinetic energy contained in mesoscale eddies.
+					This methodology uses a new eddy tracking
+					algorithm, where the basic premise is that all
+					eddies can be optimal fitted by a Gaussian feature.
+					Afterwards, through a geostrophical approximation,
+					the kinetic energy contained in the eddies can be
+					calculated.
+					Our method is effective in determining how much energy
+					is contained in mesoscale eddy-like features.
+					Synthetic data was used to assess the sensitivity and
+					energy content by this method.
+					Additionally, the algorithm was implemented to analyze
+					trends of transient kinetic energy in the Southern
+					Ocean using the Satellite SSHa (Aviso+) and
+					state-of-the-art $1/10$ degree simulation (ACCESS-OM2).
+					The presented results show an increasing trend of
+					transient kinetic energy inside eddies and also an
+					increase of the eddy amplitude in the Southern Ocean.
+					<div class="collabs">
+						<h5>Collaborators:</h5>
+						<ul class="nolistformat">
+							<li class="nolistformat">Andrew Hogg</li>
+							<li class="nolistformat">Andrew Kiss</li>
+							<li class="nolistformat">Navid Constantinou</li>
+							<li class="nolistformat">Adele Morrison</li>
+						</ul>
+					</div>
                 </div>
 
                 <div class="w3-col m6">
                 <img src="./images/TEKE.png" style="width:100%; max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Transient Eddy Kinetic energy on the Southern Ocean">
                 <img src="./images/eddy_spatial_structures.png" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Hotspot distribution at the Southern Ocean">
-                </div>
-            </div>
 
-            <div class="w3-row-padding w3-center researchSlide fade">
-                <h3 class="w3-center  w3-padding-32">
-                    Future projects
-                </h3>
-                <div class="w3-col m6" style="text-align:justify">
-                    As presented on the current project, most of the energy is 
-                    located in just eight regions of the SO. 
-                    Most of the hotspots in the SO are also the areas with the 
-                    largest positive trend. Some others do not present such 
-                    increase, which suggests the eddy dynamics or the 
-                    interaction between processes my differ. 
-                    Therefore, the next step of interest, will be to 
-                    understand each region and provide some hypothesis to 
-                    explain the different regimes of these oceanic regions. 
-                    Exploratory regional analysis at the Agulhas Current 
-                    suggest an energy transfer between the eddy processes 
-                    and the jet processes, which may be one of the reasons 
-                    why the energy is not increasing consistently in all 
-                    western boundary currents. 
-                    The figure shows the TKE, TEKE and TRKE trend at the 
-                    Agulhas Current region. 
-                    Note that the magnitude of TEKE is smaller than TRKE at 
-                    the beginning of the record, however at the end of the 
-                    time-series TEKE is larger than TRKE. 
-                    This change in magnitude could be explained by an energy 
-                    input from the jet-meander field into the eddy field.  
-                    This hypothesis is consistent with the Agulhas meander 
-                    flattening, however further research is necessary.
                 </div>
 
-                <div class="w3-col m6">
-                    <img src="./images/trends_regions.jpg" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Hotspots TEKE trends">
-                </div>
             </div>
+
             <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
             <a class="next" onclick="moveSlides(1)">&#10095;</a>
         </div>
 
         <div style="text-align:center">
             <span class="dot" onclick="activeSlide(1)"></span> 
-            <span class="dot" onclick="activeSlide(2)"></span> 
-            <span class="dot" onclick="activeSlide(3)"></span> 
+            <span class="dot" onclick="activeSlide(2)"></span>
         </div>
 
         <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -279,10 +256,71 @@
                 <p class="trn">Citations</p>
             </div>
             <div class="w3-col w3-section m6">
-                <span class="w3-xlarge">1</span><br>
-                <p class="trn">Publications</p>
+				<a class="noformat" href="https://scholar.google.com/citations?hl=en&authuser=1&user=gdPeyQ4AAAAJ">
+					<span class="w3-xlarge">2</span><br>
+					<p class="trn">Publications</p>
+				</a>
             </div>
         </div>
+
+		<div class="w3-content w3-container w3-padding-64" style="position:relative">
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops.
+            Will stack on mobile devices/small screens (100% width) -->
+
+            <div class="w3-row-padding w3-center">
+                <h3 class="w3-center  w3-padding-32">
+                    Ongoing projects & interests:
+                </h3>
+
+				<ul>
+
+					<li> LAV & LAKE </li>
+					$$LAV = \int_{t_0}^{t1}\zeta(X_0,Y_0,t)dt$$
+					$$LAKE = \int_{t_0}^{t1}KE(X_0,Y_0,t)dt$$
+					<li> Response of the coherent eddy field to winds </li>
+					<li> Ensemble aproach to wind eddy response </li>
+
+					<div class="w3-row-padding w3-center">
+						<h3 class="w3-center  w3-padding-32">
+							Flattening of Agulhas Current
+						</h3>
+						<div class="w3-col m6" style="text-align:justify">
+							As presented on the current project, most of the energy is
+							located in just eight regions of the SO.
+							Most of the hotspots in the SO are also the areas with the
+							largest positive trend. Some others do not present such
+							increase, which suggests the eddy dynamics or the
+							interaction between processes my differ.
+							Therefore, the next step of interest, will be to
+							understand each region and provide some hypothesis to
+							explain the different regimes of these oceanic regions.
+							Exploratory regional analysis at the Agulhas Current
+							suggest an energy transfer between the eddy processes
+							and the jet processes, which may be one of the reasons
+							why the energy is not increasing consistently in all
+							western boundary currents.
+							The figure shows the TKE, TEKE and TRKE trend at the
+							Agulhas Current region.
+							Note that the magnitude of TEKE is smaller than TRKE at
+							the beginning of the record, however at the end of the
+							time-series TEKE is larger than TRKE.
+							This change in magnitude could be explained by an energy
+							input from the jet-meander field into the eddy field.
+							This hypothesis is consistent with the Agulhas meander
+							flattening, however further research is necessary.
+						</div>
+
+						<div class="w3-col m6">
+							<img src="./images/trends_regions.jpg" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Hotspots TEKE trends">
+						</div>
+
+					</div>
+					<li> Climate data visualization</li>
+				</ul>
+			</div>
+		</div>
+
+
         
 
         <!-- Modal for full size images on click-->
@@ -338,7 +376,8 @@
             <h3 class="w3-center trn">ANIMATION</h3>
             <div class="w3-row-padding w3-center w3-section">
                 <div class="w3-col w3-center m12">
-                    <img src="./videos/scene_1.mp4" type="video/mp4" width="100%" height="100%" controls onclick="onClick(this)" class="w3-hover-opacity" alt="Shortfilm of research at the RV Investigator">
+                    <video src="./videos/scene_1.mp4" type="video/mp4" width="100%" height="100%" controls class="w3-hover-opacity" alt="Shortfilm of research at the RV Investigator">
+					</video>
                 </div>
             </div>
         </div>
@@ -348,14 +387,15 @@
                     <div class="w3-col m6">
                         <img src="./images/climbing.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ANU mountaineering club">
                     </div>
-                    <div class="w3-col m6">
-                        <img src="./images/surfing.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Surfing for the first time in Australia">
+
+					<div class="w3-col m6">
+                        <img src="./images/surfing_buddies.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Surfing at Wollongong, Australia">
                     </div>
                     <div class="w3-col m6">
                         <img src="./images/9day_hike_grampians.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="9 Day hike in the Grampians - Victoria, Australia">
                     </div>
                     <div class="w3-col m6">
-                        <img src="./images/surfing_buddies.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Surfing at Wollongong, Australia">
+                        <img src="./images/surfing.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Surfing for the first time in Australia">
                     </div>
                 </div> 
             </div>
@@ -427,5 +467,6 @@
     
     <script src="shared/js/interaction.js"></script>
     <script src="shared/js/translate_dict.js"></script>
+
     </body>
 </html>
