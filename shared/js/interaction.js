@@ -64,3 +64,29 @@ function showSlides(n,m=0) {
   dots[slideIndex-1].className += " active";
 }
 
+
+function animateSlides(n,m=0) {
+  setTimeout(function(){
+      var slideIndex= getRndInteger(1,5);
+	  animateSlides(slideIndex);
+	  var i;
+	  var slides = document.getElementsByClassName("researchSlide_anim");
+	  var slidesid = document.getElementById("animate_out");
+	  if (n > slides.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = slides.length}
+
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		slides[slideIndex-1].id = "";
+	  }
+
+	  slides[slideIndex-1].style.display = "block";
+	  slides[slideIndex-1].id = " animate_out";
+  }, 10000);
+}
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+animateSlides(slideIndex)

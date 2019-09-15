@@ -6,7 +6,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,14 +25,19 @@ body, html {
   min-height: 400px;
 }
 
-/* Third image (Hobbies) */
 .bgimg-3 {
+  background-image: url("../../images/milky.JPG");
+  min-height: 200px;
+}
+
+/* Third image (Hobbies) */
+.bgimg-4 {
     background-image: url("../../images/animation.png");
     min-height: 400px;
   }
 
 /* Third image (Contact) */
-.bgimg-4 {
+.bgimg-5 {
   background-image: url("../../images/sunset_southern_ocean.jpg");
   min-height: 400px;
 }
@@ -42,13 +47,27 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5{
     background-attachment: scroll;
     min-height: 400px;
   }
 }
 
-.noformat{text-decoration: none}
+.noformat{
+	text-decoration: none;
+}
+
+.nolistformat{
+	list-style-type: none;
+	margin: 0;
+  	padding: 0;
+}
+
+.collabs{
+	margin:20px;
+	width: auto;
+	text-align: center;
+}
 
 .languages{
   position: relative;
@@ -58,7 +77,6 @@ body, html {
   bottom: 0;
   padding-top: 20px
 }
-
 
 .mx{
   height: 10px;
@@ -96,28 +114,39 @@ body, html {
   display: none;
 }
 
+.w3-display-wide-middle{
+	left:10%;
+	transform: translate(-5%,-50%);
+	text-align: center;
+}
+
+.researchSlide_anim {
+  display: none;
+}
+
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 100.5%;
   width: auto;
   margin-top: -22px;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   color: rgba(128, 128, 128, 0.527);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 .next {
-  right: 0;
+  right: 0px;
   border-radius: 3px;
 }
 
 .prev {
-  left: 0;
+  left: -0px;
   border-radius: 3px;
 }
 
