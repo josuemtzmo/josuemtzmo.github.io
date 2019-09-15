@@ -67,7 +67,7 @@ function showSlides(n,m=0) {
 
 function animateSlides(n,m=0) {
   setTimeout(function(){
-      var slideIndex = getRndInteger(1,4);
+      var slideIndex= getRndInteger(1,5);
 	  animateSlides(slideIndex);
 	  var i;
 	  var slides = document.getElementsByClassName("researchSlide_anim");
