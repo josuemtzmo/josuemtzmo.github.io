@@ -5,6 +5,17 @@ body, html {
   line-height: 1.8;
 }
 
+.langmenu{
+	z-index: 3; 
+	width: 100px; 
+	height: 260px; 
+	font-weight: bold;
+	top:80px;
+	position: fixed;
+	margin: auto;
+	right: 0;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5{
   background-attachment: fixed;

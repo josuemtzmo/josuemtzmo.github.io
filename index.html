@@ -26,17 +26,7 @@
     
     
     <!-- Navbar (sit on top) -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar">
-        <br>
-        <img src="./images/me_face.png" class="w3-padding-16 w3-center w3-round w3-image" alt="Photo of Me" width="200px" height="200px">
-        <h3 class="w3-padding-64 w3-center">
-            <b>Josué<br>Martínez Moreno</b>
-        </h3>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button trn">ABOUT ME</a> 
-        <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button trn">RESEARCH</a> 
-        <a href="#hobbies" onclick="w3_close()" class="w3-bar-item w3-button trn">HOBBIES</a> 
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button trn">CONTACT</a>
-
+    <nav class="w3-white w3-animate-down w3-text-grey w3-collapse w3-center langmenu" style="display: none" id="myLangmenu">
         <div class="languages">
             <a class="w3-button w3-round lang_selector" role="button" data-value="en" id="language" name="english">EN <div class="au"></div> </a>
             <a class="w3-button w3-round lang_selector" role="button" data-value="es" id="language" name="espanol">ES <div class="mx"></div> </a>
@@ -45,26 +35,33 @@
         </div>
     </nav>
 
-    <div class="w3-main" style="margin-left:300px">
-        <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-            <img src="./images/me_face.png" class="w3-left w3-round w3-image" alt="Photo of Me" width="50" height="50">
-            <span class="w3-left w3-padding w3-large">
-                Josué Martínez Moreno
-            </span>
-            <a href="javascript:void(0)" class="w3-right w3-button w3-white w3-round" onclick="w3_open()">
-                <i class="fa fa-bars fa-fw" id="menuIcon"></i>
-            </a>
+    <div class="w3-main">
+        <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16" style="z-index:5">
+			<a href="#home" class="w3-left w3-large">
+				<img src="./images/me_face.png" class="w3-left w3-round w3-image" alt="Photo of Me" width="50" height="50">
+			</a>
+			<div class="w3-center w3-hide-small">
+				
+				<a href="#about" onclick="w3_lang_close()" class="w3-button w3-large trn">About me</a> 
+				<a href="#research" onclick="w3_lang_close()" class="w3-button w3-large trn">Research</a> 
+				<a href="#hobbies" onclick="w3_lang_close()" class="w3-button w3-large trn">Hobbies</a> 
+				<a href="#contact" onclick="w3_lang_close()" class="w3-button w3-large trn">Contact</a>
+
+				<a href="javascript:void(0)" class="w3-button w3-large w3-right" onclick="w3_lang()" id="lang-button">
+					<i class="fa fa-language fa-fw" id="LangIcon"></i>
+				</a>
+			</div>
         </header>
 
-        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_lang_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     
     
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-left w3-padding-large w3-animate-opacity trn" style="padding-left:0px!important;padding-bottom: 0px!important"> JOSUE MARTINEZ MORENO </span><br><br>
             <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity trn">PHYSICAL OCEANOGRAPHER</span><br>
-            <span class="w3-wide w3-padding-large w3-hide-small w3-animate-opacity" style="padding-right:0px!important">&</span>
-            <span class="w3-wide w3-padding-large w3-hide-small w3-animate-opacity trn" style="padding-left:0px!important">HOBBYIST</span>
+            <span class="w3-left w3-padding-large w3-hide-small w3-animate-opacity trn" style="padding-left:0px!important">&amp; HOBBYIST</span>
         </div>
         </div>
         

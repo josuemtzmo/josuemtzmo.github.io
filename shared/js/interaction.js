@@ -29,6 +29,22 @@ function w3_close() {
     document.getElementById("menuIcon").className = "fa fa-bars fa-fw";
 }
 
+
+function w3_lang() {
+    document.getElementById("myLangmenu").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("LangIcon").className = "fa fa-remove fa-fw";
+	document.getElementById("lang-button").setAttribute( "onClick", "w3_lang_close();" );
+}
+
+function w3_lang_close() {
+    document.getElementById("myLangmenu").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("LangIcon").className = "fa fa-language fa-fw";
+	document.getElementById("lang-button").setAttribute( "onClick", "w3_lang();" );
+}
+
+
 var slideIndex = 2;
 showSlides(slideIndex);
 

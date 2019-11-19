@@ -1,4 +1,20 @@
 var dict = {
+	"About me": { 
+	   es: "Acerca de mi",
+	   fr: "Un pue de moi",
+	},
+	"Research": {
+       es: "Investigación",
+	   fr: "Recherche",
+    },
+	"Hobbies": {
+        es: "Pasatiempos",
+		fr: "Loisirs",
+	},
+	"Contact": {
+        es: "Contacto",
+		fr: "Contact",
+    },
     "ABOUT ME": {
        es: "ACERCA DE MI",
 	   fr: "UN PEU DE MOI",
