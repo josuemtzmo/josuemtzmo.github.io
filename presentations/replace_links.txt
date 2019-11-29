@@ -1,0 +1,1 @@
+sed -i -e "s#./figures/#https://josuemtzmo.github.io/presentations/figures/#g" Midterm_Review.slides.html
