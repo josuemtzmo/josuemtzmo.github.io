@@ -8,7 +8,7 @@ body, html {
 .langmenu{
 	z-index: 3; 
 	width: 100px; 
-	height: 260px; 
+	height: 210px; 
 	font-weight: bold;
 	top:80px;
 	position: fixed;
@@ -166,7 +166,7 @@ body, html {
   background-color: rgba(78, 78, 78, 0.404);
 }
 
-.dot {
+.dot,.dot_anim {
   cursor: pointer;
   height: 15px;
   width: 15px;

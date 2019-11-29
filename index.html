@@ -31,7 +31,6 @@
             <a class="w3-button w3-round lang_selector" role="button" data-value="en" id="language" name="english">EN <div class="au"></div> </a>
             <a class="w3-button w3-round lang_selector" role="button" data-value="es" id="language" name="espanol">ES <div class="mx"></div> </a>
             <a class="w3-button w3-round lang_selector" role="button" data-value="fr" id="language" name="francais">FR <div class="fr"></div> </a>
-            <a class="w3-button w3-round lang_selector" role="button" data-value="ch" id="language" name="mandarin">CH <div class="ch"></div> </a>
         </div>
     </nav>
 
@@ -40,13 +39,15 @@
 			<a href="#home" class="w3-left w3-large">
 				<img src="./images/me_face.png" class="w3-left w3-round w3-image" alt="Photo of Me" width="50" height="50">
 			</a>
-			<div class="w3-center w3-hide-small">
+			
+			<div class="w3-center">
+				<div class="w3-hide-small" style="width:80vw; position:relative;display: inline">
 				
-				<a href="#about" onclick="w3_lang_close()" class="w3-button w3-large trn">About me</a> 
-				<a href="#research" onclick="w3_lang_close()" class="w3-button w3-large trn">Research</a> 
-				<a href="#hobbies" onclick="w3_lang_close()" class="w3-button w3-large trn">Hobbies</a> 
-				<a href="#contact" onclick="w3_lang_close()" class="w3-button w3-large trn">Contact</a>
-
+					<a href="#about" onclick="w3_lang_close()" class="w3-button w3-large trn">About me</a> 
+					<a href="#research" onclick="w3_lang_close()" class="w3-button w3-large trn">Research</a> 
+					<a href="#hobbies" onclick="w3_lang_close()" class="w3-button w3-large trn">Hobbies</a> 
+					<a href="#contact" onclick="w3_lang_close()" class="w3-button w3-large trn">Contact</a>
+				</div>
 				<a href="javascript:void(0)" class="w3-button w3-large w3-right" onclick="w3_lang()" id="lang-button">
 					<i class="fa fa-language fa-fw" id="LangIcon"></i>
 				</a>
@@ -59,7 +60,7 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-			<span class="w3-left w3-padding-large w3-animate-opacity trn" style="padding-left:0px!important;padding-bottom: 0px!important"> JOSUE MARTINEZ MORENO </span><br><br>
+			<span class="w3-left w3-padding-large w3-animate-opacity trn" style="padding-left:0px!important;padding-bottom: 0px!important"> JOSUÉ MARTÍNEZ MORENO </span><br><br>
             <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity trn">PHYSICAL OCEANOGRAPHER</span><br>
             <span class="w3-left w3-padding-large w3-hide-small w3-animate-opacity trn" style="padding-left:0px!important">&amp; HOBBYIST</span>
         </div>
@@ -80,60 +81,16 @@
             </em>
         </p>
         <div class="w3-content w3-container">
-			<p style="text-align:justify">
-					I am Josué Martínez Moreno a proactive Mexican Earth Scientist
-					interested in oceanic climate and environmental issues,
-					particularly where there is a high impact in population.
-			</p>
-			<p style="text-align:justify">
-					Currently, my PhD research focuses on the effects of climate
-					change over oceanic processes (eddies and jets) through
-					perturbations of kinetic energy. This research is relevant
-					due to a possible intensification of coastal heatwaves,
-					changes in the distribution of oceanic primary productivity and
-					potential feedbacks to the earth climate.
-			</p>
-
-<!--
-            <div class="w3-col m6 w3-center w3-padding-large">
-            <p>
-                <b>
-                    Josué
-                </b> 
-                Martínez Moreno
-            </p>
-            <br>
-            <img src="./images/me.png" style='max-width: 250px;' class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="80%" height="333">
-            </div>
--->
-        
-            <!-- Hide this text on small devices -->
-<!--            <div class="w3-col m6 w3-hide-small w3-padding-large">-->
-			<p style="text-align:justify">
-				A few years ago few fortuitous events allowed me to teach
-				science as a volunteer in Mexican rural communities and I
-				loved it! This inspired me to teach as a professor
-				assistant, a demonstrator and also pursuit an academic
-				formation in order to transfer my knowledge through
-				teaching.
-			</p>
-			<p style="text-align:justify">
-				I spend my free time on random projects, sometimes some
-				of this projects are about coding in order to solve
-				problems in my quotidian life, other times are more
-				artistic like acrylic painting, handmade earrings and
-				photography. I constantly provide myself with new ways to
-				learn different skills which fulfil my passion for
-				learning. Additionally, I enjoy expending time in nature,
-				diving, climbing and other outside activities.
-			</p>
-<!--            </div>-->
+			<p style="text-align:justify" class="trn">Text 1</p>
+			<p style="text-align:justify" class="trn">Text 2</p>
+			<p style="text-align:justify" class="trn">Text 3</p>
+			<p style="text-align:justify" class="trn">Text 4</p>
 
 			<p class="w3-large w3-center w3-padding-16 trn">My skills:</p>
 			<p class="w3-wide"><i class="fa fa-code"></i>PYTHON</p>
 			<div class="w3-light-grey">
 				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">
-					95%
+					96%
 				</div>
 			</div>
 			<p class="w3-wide"><i class="fa fa-book"></i>LaTeX</p>
@@ -299,56 +256,11 @@
 					</div>
 
 					<div class="w3-col m6">
-						<img src="./images/LADV_LAKE.png" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="LAD_LAKE.png">
+						<img src="./images/LAV_1d_365d.png" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="LAD_LAKE.png">
+						<img src="./images/LAKE_1d_365d.png" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="LAD_LAKE.png">
 					</div>
 
 				</div>
-
-<!--
-				<div class="w3-row-padding w3-center researchSlide_anim fade">
-					<h4 class="w3-center  w3-padding-32">
-						Response of the coherent eddy field to winds
-					</h4>
-					<div class="w3-col m6" style="text-align:justify">
-						<div class="collabs">
-						<h5>Collaborators:</h5>
-						<ul class="nolistformat">
-							<li class="nolistformat">Andrew Hogg</li>
-							<li class="nolistformat">Navid Constantinou</li>
-						</ul>
-					</div>
-					</div>
-
-					<div class="w3-col m6">
-						<img src="./images/trends_regions.jpg" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Hotspots TEKE trends">
-					</div>
-
-				</div>
--->
-
-<!--
-				<div class="w3-row-padding w3-center researchSlide_anim fade">
-					<h4 class="w3-center  w3-padding-32">
-						Ensemble aproach to wind eddy response
-					</h4>
-					<div class="w3-col m6" style="text-align:justify">
-						<div class="collabs">
-							<h5>Collaborators:</h5>
-							<ul class="nolistformat">
-								<li class="nolistformat">Andrew Hogg</li>
-								<li class="nolistformat">Navid Constantinou</li>
-								<li class="nolistformat">Navid Constantinou</li>
-								<li class="nolistformat">Navid Constantinou</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="w3-col m6">
-						<img src="./images/trends_regions.jpg" style="width:100%;max-width: 350px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Hotspots TEKE trends">
-					</div>
-
-				</div>
--->
 
 				<div class="w3-row-padding w3-center researchSlide_anim fade">
 					<h4 class="w3-center  w3-padding-32">
@@ -425,9 +337,16 @@
 					</div>
 
 				</div>
-
+			<a class="prev" onclick="moveSlides_anim(-1)">&#10094;</a>
+		<a class="next" onclick="moveSlides_anim(1)">&#10095;</a>
 		</div>
-
+		
+		<div style="text-align:center">
+			<span class="dot_anim" onclick="activeSlide_anim(1)"></span> 
+			<span class="dot_anim" onclick="activeSlide_anim(2)"></span>
+			<span class="dot_anim" onclick="activeSlide_anim(3)"></span>
+			<span class="dot_anim" onclick="activeSlide_anim(4)"></span>
+		</div>
 
         
 
@@ -549,12 +468,6 @@
         <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
         
         <div class="w3-xlarge w3-section">
-            <a class="noformat" href="https://www.facebook.com/josue.martinezmoreno">
-                <i class="fa fa-facebook-official w3-hover-opacity w3-padding-16 w3-padding-small"></i>
-            </a>
-            <a class="noformat" href="https://www.instagram.com/martinezmorenojosue/">
-                <i class="fa fa-instagram w3-hover-opacity w3-padding-16 w3-padding-small"></i>
-            </a>
             <a class="noformat" href="https://github.com/josuemtzmo">
                 <i class="fa fa-github w3-hover-opacity w3-padding-16 w3-padding-small"></i>
             </a>
