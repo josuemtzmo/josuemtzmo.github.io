@@ -50,7 +50,6 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function moveSlides(n) {
-  
   showSlides(slideIndex += n,n);
 }
 
@@ -81,28 +80,62 @@ function showSlides(n,m=0) {
 }
 
 
-function animateSlides(n,m=0) {
-  setTimeout(function(){
-      var slideIndex= getRndInteger(1,5);
-	  animateSlides(slideIndex);
-	  var i;
-	  var slides = document.getElementsByClassName("researchSlide_anim");
-	  var slidesid = document.getElementById("animate_out");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
+function showSlides_anim(n,m=0) {
+  var i;
+  var slides = document.getElementsByClassName("researchSlide_anim");
+  var slidesid = document.getElementById("animate_out");
+  var dots = document.getElementsByClassName("dot_anim");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
 
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-		slides[slideIndex-1].id = "";
-	  }
-
-	  slides[slideIndex-1].style.display = "block";
-	  slides[slideIndex-1].id = " animate_out";
-  }, 10000);
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+    slides[slideIndex-1].id = "";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  } 
+  
+  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].id = " animate_out";
+  dots[slideIndex-1].className += " active";
 }
+
+var slideIndex = 1;
+showSlides_anim(slideIndex);
+
+// Next/previous controls
+function moveSlides_anim(n) {
+  showSlides_anim(slideIndex += n,n);
+}
+
+// Thumbnail image controls
+function activeSlide_anim(n) {
+  showSlides_anim(slideIndex = n);
+}
+
+//function animateSlides(n,m=0) {
+//  setTimeout(function(){
+//      var slideIndex= getRndInteger(1,5);
+//	  animateSlides(slideIndex);
+//	  var i;
+//	  var slides = document.getElementsByClassName("researchSlide_anim");
+//	  var slidesid = document.getElementById("animate_out");
+//	  if (n > slides.length) {slideIndex = 1}
+//	  if (n < 1) {slideIndex = slides.length}
+//
+//	  for (i = 0; i < slides.length; i++) {
+//		slides[i].style.display = "none";
+//		slides[slideIndex-1].id = "";
+//	  }
+//
+//	  slides[slideIndex-1].style.display = "block";
+//	  slides[slideIndex-1].id = " animate_out";
+//  }, 10000);
+//}
 
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-animateSlides(slideIndex)
+//animateSlides(slideIndex)
