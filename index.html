@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="shared/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="shared/js/interaction.js">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="shared/js/translate.js"></script>
+	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 	<script>
 		window.MathJax = {
 			tex: {
@@ -123,7 +125,7 @@
         
 		<div class="w3-row w3-center w3-dark-grey w3-padding-16">
             <div class="w3-col w3-section m6">
-                <span class="w3-xlarge">+</span><br>
+                <span class="w3-xlarge">2</span><br>
                 <p class="trn">Citations</p>
             </div>
             <div class="w3-col w3-section m6">
@@ -133,12 +135,38 @@
 				</a>
             </div>
         </div>
+		<div class="w3-content w3-container" style="position:relative">
+			<h3 class="w3-center  w3-padding-32">
+				Submitted
+			</h3>
+			<ul class="w3-center">
+				<li class="w3-padding-16" style="text-align:justify"> <b>Martínez-Moreno, J.</b>, Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. (2020). Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020) <a href="https://doi.org/10.21203/rs.3.rs-88932/v1" target="_blank"><span class="paper_button doi_button w3-round" style="font-family:sans-serif;">doi</span></a>
+				</li>
+			</ul>
+			
+			<h3 class="w3-center  w3-padding-32">
+				In press/Published
+			</h3>
+			<ul class="w3-center">
+				<li class="w3-padding-16" style="text-align:justify"> 
+					<b>Martínez-Moreno, J.</b>, Hogg, A. McC., Kiss, A. E., Constantinou, N. C., and Morrison, A. K. (2019). Kinetic energy of eddy-like features from sea surface altimetry. J. Adv. Model. Earth Sy., 11 (10), 3090-3105. (featured in the CLEX press news) <a href="https://doi.org/10.1029/2019MS001769" target="_blank"><span class="paper_button doi_button w3-round" style="font-family:sans-serif;">doi</span></a>  <div class='altmetric-embed' data-badge-popover='bottom' data-doi='10.1029/2019ms001769' style="display: inline; vertical-align: text-bottom"></div>
+				</li>
+				<li class="w3-padding-16" style="text-align:justify"> 
+					Méndez-Fragoso, R., Villavicencio-Torres, M., <b>Martínez-Moreno J.</b> (2017). Design And Use Online Platforms To Learn Mathematics And The Use Of Them In Simulations Of Problems In Applied Sciences. International Journal for Technology in Mathematics Education, 24, 89-94 <a href="https://doi.org/10.1564/tme_v24.2.06" target="_blank"><span class="paper_button doi_button w3-round" style="font-family:sans-serif;">doi</span></a>
+				
+				</li>
+				
+			</ul>
 
+		</div>
+		
         <!-- Container (Portfolio Section) -->
-        <div class="w3-content w3-container w3-padding-64" style="position:relative">
+        <div class="w3-content w3-container" style="position:relative">
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. 
             Will stack on mobile devices/small screens (100% width) -->
-            
+            <h2 class="w3-center  w3-padding-32">
+				Projects
+			</h2>
             <div class="w3-row-padding w3-center researchSlide fade"> 
                 <h3 class="w3-center  w3-padding-32">
                     Past projects
@@ -237,10 +265,10 @@
 					<div class="w3-col m6" style="text-align:justify">
 						LAV corresponds to the Lagrangian Advected Vorticity and LAKE is the Lagrangian Advected Kinetic Energy.
 
-						$$LAV = \int_{t_0}^{t1}\zeta(X_0,Y_0,t)dt$$
-						$$LAKE = \int_{t_0}^{t1}KE(X_0,Y_0,t)dt$$
+						$$LAV = \frac{1}{\nabla T}\int_{t_0}^{t1}\zeta(X_0,Y_0,t)dt$$
+						$$LAKE = \frac{1}{\nabla T}\int_{t_0}^{t1}KE(X_0,Y_0,t)dt$$
 
-						These two quantities are used to diagnose the identifie coherent structures as well as the energy contained by them. For more information, please refere to the following reference:
+						These two quantities are used to diagnose the identify coherent structures as well as the energy contained by them. For more information, please refere to the following reference:
 
 						<p style="font-size: 12px">
 							Abernathey, R., & Haller, G. (2018). Transport by Lagrangian Vortices in the Eastern Pacific. Journal of Physical Oceanography. doi:10.1175/JPO-D-17-0102.1
