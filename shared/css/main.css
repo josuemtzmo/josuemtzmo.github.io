@@ -198,3 +198,26 @@ body, html {
   from {opacity: .1} 
   to {opacity: 1}
 }
+
+.paper_button{
+	border:none;
+	display:inline-block;
+	padding:0px 8px;
+	vertical-align:bottom;
+	overflow:hidden;
+	text-decoration:none;
+	color:#fff;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	margin-bottom: 3px
+}
+
+.doi_button{
+	background-color:rgba(0,138,255,0.55);
+}
+
+.doi_button:hover{
+	background-color:rgba(0,133,161,0.55);
+}
+
