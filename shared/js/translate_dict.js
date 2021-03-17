@@ -84,28 +84,51 @@ var dict = {
 		
     },
 	"Text 1": {
-		en: "I am Josué Martínez Moreno an Physical Oceanographer interested in oceanic variability and environmental issues, particularly where there is a high impact in population.",
-		es:"Soy Josué Martínez Moreno, un oceanógrafo físico interesado en variabilidad oceanica y problematicas ambientales, particularmente cuando existe in alto impacto en la poblacion.",
-		fr:"Je suis Josué Martínez Moreno, une océanographe physique intéressé par la variabilité océanique et les problèmes environnementaux, en particulier où le impact est élevé sur la population.",
+		en: "I grew up in Mexico City, where I studied Earth Scinces at the National Autonomous University of Mexico. Afterwards, I moved to Canberra, Australia, where I started and continue doing my Ph.D. at the Australian National University under the supervision of <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> on ocean variability, in particular, variability of ocean eddies with scales between 10 to 100 km. On September 2021, I will start a postdoctoral fellow with <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> at IFREMER, Brest, France, to work on sea-ice interactions and ocean heat fluxes.",
+		es: "Crecí en la Ciudad de México, donde estudie Ciencias de la Tierra en la Universidad Nacional Autónoma de México. Después, me mude a Canberra, Australia, donde comencé y continuo estudiando my doctorado en la Universidad Nacional Australiana bajo la supervision de <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> en variabilidad oceanica, en particular, variabilidad de eddies oceanicos con escalas de 10 a 100 km. En Septiembre 2021, comenzaré un postdoctorado con <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> en IFREMER, Brest, Francia, trabajando en interacciones oceano-hielo y flujos the calor.",
+		fr: "J'ai grandi à Mexico, où j'ai étudié les sciences de la terre à l'Université nationale autonome du Mexique. Ensuite, j'ai déménagé à Canberra, en Australie, où j'ai commencé et je continue à faire mon doctorat. à l'Université nationale australienne sous la supervision de <a class='download_links' href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'> Andy Hogg <\a> sur l'océan la variabilité, en particulier la variabilité des eddies océaniques à des échelles comprises entre 10 et 100 km. En septembre 2021, je commencerai un post-doctorant avec <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'> Camille Lique <\a> à l'IFREMER, Brest, France, travailler sur les interactions glace-mer et les flux de chaleur océanique.",
 	},
 	"Text 2":{
-		en:"Currently, my PhD research focuses on the effects of climate change over oceanic kinetic energy and the distinctive mesoscale oceanic processes (eddies and jets). This research is relevant due to a possible feedbacks on oceanic heat and carbon exchange and even feasible consequences to the earth climate.",
-		es:"Actualmente, mi investigación de doctorado se enfoca en los efectos del cambio climatico sobre la energia cinetica oceanica y los processos de mesosescala caracteristicos del oceano (eddies y jets). Esta investigacion es relevante debido a la posible retroalimentacions en el intercambio térmico y de carbon ocenaico ademas de factibles consecuencias en el clima terrestre.",
-		fr:"Actuellement, ma recherche porte sur les effets du changement climatique sur océanique énergie cinétique et les processus océaniques distinctifs de mésoéchelle (eddies et jets). Cette recherche est pertinente pour un éventuel retour d'information sur la chaleur océanique et les échanges de carbone.",
+		en: "",
+		es: "",
+		fr: "",
 	},
 	"Text 3":{
-		en:"A few years ago few fortuitous events allowed me to teach science as a volunteer in Mexican rural communities and I loved it! This inspired me to teach as a professor assistant, a demonstrator and also pursuit an academic formation in order to transfer my knowledge through teaching.",
-		es:"Hace unos años, eventos fortuitos me permitieron enseñar ciencia como un voluntarion en comunidades rurales de Mexico. Esto me inspiro mi interes como ayudante de profesor, demostrador, además de una formacion academica que me permita transferir mis conocimientos a traves de la enseñansa.",
-		fr:"Il y a quelques années, événements fortuits m'ont permis d'enseigner les sciences en tant que bénévole dans les communautés rurales mexicaines et j'ai adoré! Cela m'a inspiré à enseigner en tant qu'assistante de professeur, démonstratrice et à poursuivre une formation académique afin de transférer mes connaissances par le biais de l'enseignement.",
+		en: "",
+		es: "",
+		fr: "",
 	},
 	"Text 4":{
-		en:"I spend my free time on random projects, sometimes some of this projects are about coding in order to solve problems in my quotidian life, other times are more artistic like acrylic painting, handmade earrings and photography. I constantly provide myself with new ways to learn different skills which fulfil my passion for learning. Additionally, I enjoy expending time in nature, diving, climbing and other outside activities.",
-		es:"",
-		fr:"Je passe mon temps libre sur des projets aléatoires, parfois certains de ces projets concernent le codage afin de résoudre des problèmes de ma vie quotidienne, d'autres fois sont plus artistiques comme la peinture acrylique, les boucles d'oreilles faites à la main et la photographie. Je me donne constamment de nouvelles façons d’acquérir différentes compétences qui répondent à ma passion pour l’apprentissage. De plus, j'aime passer du temps dans la nature, la plongée, l'escalade et d'autres activités extérieures.",
+		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links' href=#research >my research<\a>.",
+		es: "Descarga mi <a class='download_links' href=../documents/JMM_CV_ESP.pdf>curriculum (CV)<\a> o lee más sobre <a class='download_links' href=#research >mi investigación<\a>.",
+		fr: "Télécharger ma <a class='download_links' href=../documents/JMM_CV_FRA.pdf>vitae (CV)<\a> ou lire plus sur <a class='download_links' href=#research >mes recherches<\a>.",
 	},
-	
-	
-	"example":{
+
+  "Proj_1":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "Proj_2":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "Interest_1":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "To_top":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "example":{
 		en:"",
 		es:"",
 		fr:"",

@@ -5,6 +5,10 @@ body, html {
   line-height: 1.8;
 }
 
+b{
+  font-weight: 900;
+}
+
 .langmenu{
 	z-index: 3; 
 	width: 100px; 
@@ -17,7 +21,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5{
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,6 +56,14 @@ body, html {
   background-image: url("../../images/sunset_southern_ocean.jpg");
   min-height: 400px;
 }
+
+.bgimg-6 {
+  background-image: url("../../videos/website.gif");
+  min-height: 400px;
+  background-position:right;
+}
+
+
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -221,3 +233,15 @@ body, html {
 	background-color:rgba(0,133,161,0.55);
 }
 
+.download_links{
+  border:none;
+	display:inline-block;
+	vertical-align:bottom;
+	overflow:hidden;
+	text-decoration:none;
+	color:#0095B3;
+}
+
+.download_links:hover{
+  color:#00d5ff;
+}

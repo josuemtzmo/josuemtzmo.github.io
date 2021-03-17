@@ -138,4 +138,38 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
+var getHTML = function ( url, callback ) {
+
+	// Feature detection
+	if ( !window.XMLHttpRequest ) return;
+
+	// Create new request
+	var xhr = new XMLHttpRequest();
+
+	// Setup callback
+	xhr.onload = function() {
+		if ( callback && typeof( callback ) === 'function' ) {
+			callback( this.responseXML );
+		}
+	}
+
+	// Get the HTML
+	xhr.open( 'GET', url );
+	xhr.responseType = 'document';
+	xhr.send();
+
+};
+
+function get_google_scholar_citation(url){
+  getHTML( url, function (response) {
+    var price = 0
+    var round = Math.round;
+    var priceEls = document.getElementsByClassName("gsc_a_ac gs_ibl");
+    for (var i = 0; i < priceEls.length; i++) {
+      price += round(priceEls[i].innerText);
+    }
+    return price
+  });
+}
+
 //animateSlides(slideIndex)
