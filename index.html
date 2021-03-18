@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="shared/js/interaction.js">
+    <link  type='text/javascript' href="shared/js/interaction.js">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="shared/js/translate.js"></script>
 	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -33,6 +33,7 @@
             <a class="w3-button w3-round lang_selector" role="button" data-value="en" id="language" name="english">EN <div class="au"></div> </a>
             <a class="w3-button w3-round lang_selector" role="button" data-value="es" id="language" name="espanol">ES <div class="mx"></div> </a>
             <a class="w3-button w3-round lang_selector" role="button" data-value="fr" id="language" name="francais">FR <div class="fr"></div> </a>
+			<!-- <a class="w3-button w3-round lang_selector" role="button" data-value="" id="language" name="francais">ACE <div class="ace"></div> </a> -->
         </div>
     </nav>
 
@@ -62,15 +63,25 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-			<span class="w3-left w3-padding-large w3-animate-opacity trn" style="padding-left:0px!important;padding-bottom: 0px!important"> JOSUÉ MARTÍNEZ MORENO </span><br><br>
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity trn">PHYSICAL OCEANOGRAPHER</span><br>
+			<div class="w3-left w3-padding-large w3-animate-opacity" 	style="padding-left:0px!important;padding-bottom: 0px!important">
+				<span class="trn">JOSUÉ MARTÍNEZ MORENO</span>
+				<!-- <span class="trn">pronouns</span> -->
+			</div>
+			<br><br>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity trn">PHYSICAL OCEANOGRAPHER</span>
+			<br>
             <span class="w3-left w3-padding-large w3-hide-small w3-animate-opacity trn" style="padding-left:0px!important">&amp; HOBBYIST</span>
+			
         </div>
         </div>
         
         <!-- Container (About Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center  w3-padding-32 trn">ABOUT ME</h3>
+		<div class="bgimg-2 w3-display-container w3-opacity-min" id="about">
+		<div class="w3-display-middle">
+			<span class="w3-xxlarge w3-text-white w3-wide trn">ABOUT ME</span>
+		</div>
+		</div>
+        <div class="w3-content w3-container w3-padding-64">
         <p class="w3-center">
             <em class="trn" data-trn-key="quote">
             “LIVE AS IF YOU WERE TO DIE TOMORROW. LEARN AS IF YOU WERE TO LIVE 
@@ -83,47 +94,15 @@
             </em>
         </p>
         <div class="w3-content w3-container">
-			<p style="text-align:justify" class="trn">Text 1</p>
-			<p style="text-align:justify" class="trn">Text 2</p>
-			<p style="text-align:justify" class="trn">Text 3</p>
-			<p style="text-align:justify" class="trn">Text 4</p>
-
-			<p class="w3-large w3-center w3-padding-16 trn">My skills:</p>
-			<p class="w3-wide"><i class="fa fa-code"></i>PYTHON</p>
-			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">
-					96%
-				</div>
-			</div>
-			<p class="w3-wide"><i class="fa fa-book"></i>LaTeX</p>
-			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">
-					95%
-				</div>
-			</div>
-			<p class="w3-wide"><i class="fa fa-folder-open"></i>BIG DATA</p>
-			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">
-					85%
-				</div>
-			</div>
-			<p class="w3-wide"><i class="fa fa-window-restore"></i>DATA VISUALIZATION</p>
-			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">
-					75%
-				</div>
-			</div>
-        	<p class="w3-wide"><i class="fa fa-window-restore"></i>WEB DEVELOP</p>
-			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%">
-					55%
-				</div>
-			</div>
+			<p style="text-align:justify; font-size: 17px;" class="trn">Text 1</p>
+			<p style="text-align:justify; font-size: 17px" class="trn">Text 2</p>
+			<p style="text-align:justify; font-size: 17px" class="trn">Text 3</p>
+			<p style="text-align:justify; font-size: 17px" class="trn">Text 4</p>
         </div>
         </div>
         
         <!-- Second Parallax Image with Portfolio Text -->
-        <div class="bgimg-2 w3-display-container w3-opacity-min" id="research">
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="research">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide trn">RESEARCH</span>
         </div>
@@ -146,7 +125,7 @@
 				Accepted
 			</h3>
 			<ul class="w3-center">
-				<li class="w3-padding-16" style="text-align:justify"> <b>Martínez-Moreno, J.</b>, Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. (2020). Global changes in oceanic mesoscale currents over the satellite altimetry record.  Nature Climate Change (Accepted on Jan. 2021) <a href="https://doi.org/10.21203/rs.3.rs-88932/v1" target="_blank"><span class="paper_button doi_button w3-round" style="font-family:sans-serif;">doi</span></a>
+				<li class="w3-padding-16" style="text-align:justify"> <b>Martínez-Moreno, J.</b>, Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. (2020). Global changes in oceanic mesoscale currents over the satellite altimetry record.  Nature Climate Change (Accepted on Feb. 2021) <a href="https://doi.org/10.21203/rs.3.rs-88932/v1" target="_blank"><span class="paper_button doi_button w3-round" style="font-family:sans-serif;">doi</span></a>
 				</li>
 			</ul>
 			
@@ -381,7 +360,7 @@
 		</div> 
 	-->
 
-		<div class="bgimg-6 w3-display-container w3-opacity-min" id="visualization">
+		<div class="bgimg-7 w3-display-container w3-opacity-min" id="visualization">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide trn">
 				SCIENCE VISUALIZATION
@@ -407,7 +386,7 @@
         </div>
         
         <!-- Third Parallax Image with Portfolio Text -->
-        <div class="bgimg-4 w3-display-container w3-opacity-min" id="hobbies">
+        <div class="bgimg-5 w3-display-container w3-opacity-min" id="hobbies">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide trn">HOBBIES</span>
         </div>
@@ -494,8 +473,6 @@
                     AUSTRALIAN NATIONAL UNIVERSITY<br>
                     <i class="fa fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
                     CANBERRA, AUSTRALIA<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
-                    +61 426 104 364<br>
                     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
                     Email: 
                     <a href="mailto:josue.martinezmoreno@anu.edu.au?Subject=Hello">

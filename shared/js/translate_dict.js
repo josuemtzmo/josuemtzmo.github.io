@@ -83,18 +83,23 @@ var dict = {
 		fr: "VIS COMME SI TU DEVAIS MOURIR DEMAIN. APPRENDS COMME SI TU DEVAIS VIVRE TOUJOURS",
 		
     },
-	"Text 1": {
-		en: "I grew up in Mexico City, where I studied Earth Scinces at the National Autonomous University of Mexico. Afterwards, I moved to Canberra, Australia, where I started and continue doing my Ph.D. at the Australian National University under the supervision of <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> on ocean variability, in particular, variability of ocean eddies with scales between 10 to 100 km. On September 2021, I will start a postdoctoral fellow with <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> at IFREMER, Brest, France, to work on sea-ice interactions and ocean heat fluxes.",
-		es: "Crecí en la Ciudad de México, donde estudie Ciencias de la Tierra en la Universidad Nacional Autónoma de México. Después, me mude a Canberra, Australia, donde comencé y continuo estudiando my doctorado en la Universidad Nacional Australiana bajo la supervision de <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> en variabilidad oceanica, en particular, variabilidad de eddies oceanicos con escalas de 10 a 100 km. En Septiembre 2021, comenzaré un postdoctorado con <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> en IFREMER, Brest, Francia, trabajando en interacciones oceano-hielo y flujos the calor.",
-		fr: "J'ai grandi à Mexico, où j'ai étudié les sciences de la terre à l'Université nationale autonome du Mexique. Ensuite, j'ai déménagé à Canberra, en Australie, où j'ai commencé et je continue à faire mon doctorat. à l'Université nationale australienne sous la supervision de <a class='download_links' href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'> Andy Hogg <\a> sur l'océan la variabilité, en particulier la variabilité des eddies océaniques à des échelles comprises entre 10 et 100 km. En septembre 2021, je commencerai un post-doctorant avec <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'> Camille Lique <\a> à l'IFREMER, Brest, France, travailler sur les interactions glace-mer et les flux de chaleur océanique.",
+	"pronouns":{
+		en:"(Pronouns: per/pers) ",
+		es:"",
+		fr:""
 	},
-	"Text 2":{
-		en: "",
-		es: "",
-		fr: "",
+	"Text 1":{
+		en: "I am a Physical Oceanographer interested in oceanic variability and environmental issues using satelllite observations, and state-of-the-art ocean and climate models. I am passionate about making science communication more accessible to Earth Scientists and to increase the connections between Earth Scientists and a wider audience, through data visualisation and informing policy makers.",
+		es: "Soy un Oceanógrafo físico interesado en variabilidad oceanica y problemas ambientales usando observaciones satelitales, y modelos numericos oceanicos. Me appasiona hacer comunicacion de la cienca más accesible a científicos de la Tierra y a una audiencia más amplia, a través de visualización de datos e informar a los responsables de la formulación de políticas.",
+		fr: "Je suis un océanographe physique intéressé par la variabilité océanique et les problèmes environnementaux à l'aide d'observations satellitaires et de modèles océaniques et climatiques de pointe. Je suis passionné de rendre la communication scientifique plus accessible aux scientifiques de la Terre et d'accroître les liens entre les scientifiques de la Terre et un public plus large, grâce à la visualisation des données et à l'information des décideurs.",
+	},
+	"Text 2": {
+		en: "I grew up in Mexico City, where I studied Earth Scinces at the National Autonomous University of Mexico. Afterwards, I moved to Canberra, Australia, where I started and continue doing my Ph.D. at the Australian National University under the supervision of <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> on ocean variability, in particular, variability of ocean eddies with scales between 10 to 100 km. On September 2021, I will start a postdoctoral fellow with <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> at IFREMER, Brest, France, to work on sea-ice interactions and ocean heat fluxes in the Artic.",
+		es: "Crecí en la Ciudad de México, donde estudie Ciencias de la Tierra en la Universidad Nacional Autónoma de México. Después, me mude a Canberra, Australia, donde comencé y continuo estudiando my doctorado en la Universidad Nacional Australiana bajo la supervision de <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> en variabilidad oceanica, en particular, variabilidad de eddies oceanicos con escalas de 10 a 100 km. En Septiembre 2021, comenzaré un postdoctorado con <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> en IFREMER, Brest, Francia, trabajando en interacciones oceano-hielo y flujos the calor en el Ártico.",
+		fr: "J'ai grandi à Mexico, où j'ai étudié les sciences de la terre à l'Université nationale autonome du Mexique. Ensuite, j'ai déménagé à Canberra, en Australie, où j'ai commencé et je continue à faire mon doctorat. à l'Université nationale australienne sous la supervision de <a class='download_links' href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'> Andy Hogg <\a> sur l'océan la variabilité, en particulier la variabilité des eddies océaniques à des échelles comprises entre 10 et 100 km. En septembre 2021, je commencerai un post-doctorant avec <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'> Camille Lique <\a> à l'IFREMER, Brest, France, travailler sur les interactions glace-mer et les flux de chaleur océanique dans l'Arctique.",
 	},
 	"Text 3":{
-		en: "",
+		en: "I spend my free time on in nature or doing random projects, from coding to acrylic painting, handmade earrings, and photography. I constantly look for new ways to learn new skills to fulfil my passion for learning.",
 		es: "",
 		fr: "",
 	},
@@ -137,7 +142,7 @@ var dict = {
 
 var _t = $('body').translate({lang: "en", t: dict});
 var str = _t.g("translate");
-console.log(str);
+// console.log(str);
 
 $( ".lang_selector" ).on( "click", function(ev) {
     var lang = $(this).data()['value'];
