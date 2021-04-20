@@ -104,9 +104,9 @@ var dict = {
 		fr: "",
 	},
 	"Text 4":{
-		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links' href=#research >my research<\a>.",
-		es: "Descarga mi <a class='download_links' href=../documents/JMM_CV_ESP.pdf>curriculum (CV)<\a> o lee más sobre <a class='download_links' href=#research >mi investigación<\a>.",
-		fr: "Télécharger ma <a class='download_links' href=../documents/JMM_CV_FRA.pdf>vitae (CV)<\a> ou lire plus sur <a class='download_links' href=#research >mes recherches<\a>.",
+		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links local_exit' href='research.html' >my research<\a>.",
+		es: "Descarga mi <a class='download_links' href=../documents/JMM_CV_ESP.pdf>curriculum (CV)<\a> o lee más sobre <a class='download_links local_exit' href='research.html' >mi investigación<\a>.",
+		fr: "Télécharger ma <a class='download_links' href=../documents/JMM_CV_FRA.pdf>vitae (CV)<\a> ou lire plus sur <a class='download_links local_exit' href='research.html' >mes recherches<\a>.",
 	},
 
   "Proj_1":{
@@ -142,12 +142,26 @@ var dict = {
 
 var _t = $('body').translate({lang: "en", t: dict});
 var str = _t.g("translate");
+var lang = 'en'
 // console.log(str);
 
 $( ".lang_selector" ).on( "click", function(ev) {
-    var lang = $(this).data()['value'];
+	console.log($(this))
+    lang = $(this).data()['value'];
     _t.lang(lang);
     ev.preventDefault();
+});
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.get('lang')){
+	lang = urlParams.get('lang')
+	_t.lang(lang);
+}
+
+$( ".local_exit" ).on( "click", function(ev) {
+	var local_url = $(this).attr("href")
+	$(this).attr("href", local_url +'?lang='+lang )
 });
 
 // Translate util:

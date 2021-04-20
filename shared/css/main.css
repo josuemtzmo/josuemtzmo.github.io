@@ -66,6 +66,55 @@ b{
   background-position:right;
 }
 
+.continue_info_click{
+  position: absolute;
+  bottom:0px; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index:10
+}
+
+#continue_click span{
+  position: relative;
+  font-size:16px;}
+
+#continue_click svg{
+  position: relative;
+  display:block;
+  bottom:0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+#more-arrows:hover polygon {
+  fill: #222;
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-middle {
+  transform: translateY(10px);
+}
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(20px);
+}
+
+polygon {
+  fill: #717171;
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+}
 
 
 .w3-wide {letter-spacing: 10px;}
@@ -263,3 +312,7 @@ b{
 .download_links:hover{
   color:#00d5ff;
 }
+
+#img01{opacity: 0;}
+#modal01{opacity: 0;}
+#caption{opacity: 0;}

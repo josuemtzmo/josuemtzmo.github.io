@@ -1,46 +1,70 @@
 // Modal Image Gallery
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
+function displayModal(element) {
+  var image = document.getElementById("img01");
+  var modal = document.getElementById("modal01");
+  var captionText = document.getElementById("caption");
+
+  image.src = element.src;
+  modal.style.display = "block";
+  modal.style.zIndex = "10";
+  
+  captionText.innerHTML = element.alt;
+
+  image.animate([{ opacity: "1" },], {duration: 500, fill:"forwards"})
+  modal.animate([{ opacity: "1" },], {duration: 500, fill:"forwards"})
+  captionText.animate([{ opacity: "1" },], {duration: 500, fill:"forwards"})
+
+}
+
+function hideModal(element) {
+  var image = document.getElementById("img01");
+  var modal = document.getElementById("modal01");
+  var captionText = document.getElementById("caption");
+  
+  image.animate([{ opacity: "0" },], {duration: 300, fill:"forwards"})
+  modal.animate([{ opacity: "0" },], {duration: 300, fill:"forwards"})
+  captionText.animate([{ opacity: "0" },], {duration: 300, fill:"forwards"})
+
+  setTimeout(function() {
+    element.style.display='none'
+  }, 300)
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+  } else {
+      x.className = x.className.replace(" w3-show", "");
+  }
 }
 
 // Script to open and close sidebar
 function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-    document.getElementById("menuIcon").className = "fa fa-remove fa-fw";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("menuIcon").className = "fa fa-remove fa-fw";
 }
 
 function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-    document.getElementById("menuIcon").className = "fa fa-bars fa-fw";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("menuIcon").className = "fa fa-bars fa-fw";
 }
 
 
 function w3_lang() {
-    document.getElementById("myLangmenu").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-    document.getElementById("LangIcon").className = "fa fa-remove fa-fw";
+  document.getElementById("myLangmenu").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("LangIcon").className = "fa fa-remove fa-fw";
 	document.getElementById("lang-button").setAttribute( "onClick", "w3_lang_close();" );
 }
 
 function w3_lang_close() {
-    document.getElementById("myLangmenu").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-    document.getElementById("LangIcon").className = "fa fa-language fa-fw";
+  document.getElementById("myLangmenu").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("LangIcon").className = "fa fa-language fa-fw";
 	document.getElementById("lang-button").setAttribute( "onClick", "w3_lang();" );
 }
 
@@ -138,38 +162,11 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-var getHTML = function ( url, callback ) {
-
-	// Feature detection
-	if ( !window.XMLHttpRequest ) return;
-
-	// Create new request
-	var xhr = new XMLHttpRequest();
-
-	// Setup callback
-	xhr.onload = function() {
-		if ( callback && typeof( callback ) === 'function' ) {
-			callback( this.responseXML );
-		}
-	}
-
-	// Get the HTML
-	xhr.open( 'GET', url );
-	xhr.responseType = 'document';
-	xhr.send();
-
-};
-
-function get_google_scholar_citation(url){
-  getHTML( url, function (response) {
-    var price = 0
-    var round = Math.round;
-    var priceEls = document.getElementsByClassName("gsc_a_ac gs_ibl");
-    for (var i = 0; i < priceEls.length; i++) {
-      price += round(priceEls[i].innerText);
-    }
-    return price
-  });
+var continue_click = document.getElementById('continue_click');
+if (continue_click){
+  continue_click.style.cursor = 'pointer';
+  continue_click.onclick = function() {
+      $('html, body').animate({ scrollTop: $(window).height()-50}, 'slow');
+      document.body.style.overflow = 'visible';
+  };    
 }
-
-//animateSlides(slideIndex)
