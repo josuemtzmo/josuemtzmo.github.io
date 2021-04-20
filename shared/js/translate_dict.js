@@ -39,6 +39,10 @@ var dict = {
         es: "PASATIEMPOS",
 		fr: "HOBBYIST",
     },
+	"Acceleration of mesoscale currents":{
+		es:"Aceleración de las corrientes de mesoescala",
+		fr:"Accélération des courants méso-échelle"
+	},
     "My skills:":{
         es: "Mis habilidades:",
 		fr: "Mes compétences",
@@ -47,6 +51,16 @@ var dict = {
         es: "Citas",
 		fr: "Citations",
     },
+	"Submitted":{
+		en: "Submitted",
+		es: "Enviado",
+		fr: "Soumis",
+	},
+	"Press":{
+		en: "In press/Published",
+		es: "En prensa/Publicado",
+		fr: "Presse/Publié",
+	},
     "Publications": {
         es: "Publicaciones",
 		fr: "Publications",
@@ -70,6 +84,10 @@ var dict = {
     "To the top!": {
         es: "Ir al inicio!",
 		fr: "Allez au début!",
+    },
+	"I'd be happy to hear from you!": {
+        es: "¡Me encantaría saber de ti!",
+		fr: "Je serais heureux de vous entendre!",
     },
     photo_text: {
         en: "My photograph passion focus on flowers, landscapes and culture.",
@@ -99,9 +117,9 @@ var dict = {
 		fr: "J'ai grandi à Mexico, où j'ai étudié les sciences de la terre à l'Université nationale autonome du Mexique. Ensuite, j'ai déménagé à Canberra, en Australie, où j'ai commencé et je continue à faire mon doctorat. à l'Université nationale australienne sous la supervision de <a class='download_links' href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'> Andy Hogg <\a> sur l'océan la variabilité, en particulier la variabilité des eddies océaniques à des échelles comprises entre 10 et 100 km. En septembre 2021, je commencerai un post-doctorant avec <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'> Camille Lique <\a> à l'IFREMER, Brest, France, travailler sur les interactions glace-mer et les flux de chaleur océanique dans l'Arctique.",
 	},
 	"Text 3":{
-		en: "I spend my free time on in nature or doing random projects, from coding to acrylic painting, handmade earrings, and photography. I constantly look for new ways to learn new skills to fulfil my passion for learning.",
-		es: "",
-		fr: "",
+		en: "I spend my free time in nature or doing random projects, from coding to acrylic painting, handmade earrings, and photography. I constantly look for new ways to learn new skills to fulfill my passion for learning.",
+		es: "Dedico mi tiempo libre en la naturaleza o haciendo proyectos aleatorios, programar, pintar, hacer aretes y fotografía. Constantemente busco nuevas formas de aprender nuevas habilidades para satisfacer mi pasión por aprender.",
+		fr: "Je passe mon temps libre dans la nature ou à faire des projets aléatoires, du codage à la peinture acrylique, en passant par les boucles d'oreilles faites à la main et la photographie. Je recherche constamment de nouvelles façons d'acquérir de nouvelles compétences pour répondre à ma passion d'apprendre.",
 	},
 	"Text 4":{
 		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links local_exit' href='research.html' >my research<\a>.",
