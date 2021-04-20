@@ -5,53 +5,117 @@ body, html {
   line-height: 1.8;
 }
 
+b{
+  font-weight: 900;
+}
+
 .langmenu{
 	z-index: 3; 
 	width: 100px; 
-	height: 210px; 
+	height: auto; 
 	font-weight: bold;
-	top:80px;
+	top:70px;
 	position: fixed;
 	margin: auto;
 	right: 0;
+  padding-bottom: 10px;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5{
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('../../images/snow_rv_investigator.jpg');
   min-height: 100vh;
 }
 
-/* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("../../images/southern_ocean.jpg");
+  background-image: url("../../images/space_astronaut.png");
   min-height: 400px;
 }
 
 .bgimg-3 {
+  background-image: url("../../images/southern_ocean.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
   background-image: url("../../images/milky.JPG");
   min-height: 200px;
 }
 
-/* Third image (Hobbies) */
-.bgimg-4 {
+.bgimg-5 {
     background-image: url("../../images/animation.png");
     min-height: 400px;
   }
 
-/* Third image (Contact) */
-.bgimg-5 {
+
+.bgimg-6 {
   background-image: url("../../images/sunset_southern_ocean.jpg");
   min-height: 400px;
 }
+
+.bgimg-7 {
+  background-image: url("../../videos/website.gif");
+  min-height: 400px;
+  background-position:right;
+}
+
+.continue_info_click{
+  position: absolute;
+  bottom:0px; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index:10
+}
+
+#continue_click span{
+  position: relative;
+  font-size:16px;}
+
+#continue_click svg{
+  position: relative;
+  display:block;
+  bottom:0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+}
+#more-arrows:hover polygon {
+  fill: #222;
+  transition: all 0.2s ease-out;
+}
+#more-arrows:hover polygon.arrow-middle {
+  transform: translateY(10px);
+}
+#more-arrows:hover polygon.arrow-top {
+  transform: translateY(20px);
+}
+
+polygon {
+  fill: #717171;
+  transition: all 0.2s ease-out;
+}
+polygon.arrow-middle {
+  opacity: 0.75;
+}
+polygon.arrow-top {
+  opacity: 0.5;
+}
+
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -71,7 +135,7 @@ body, html {
 .nolistformat{
 	list-style-type: none;
 	margin: 0;
-  	padding: 0;
+  padding: 0;
 }
 
 .collabs{
@@ -111,6 +175,21 @@ body, html {
   height: 10px;
   background-size: 100% 100%;
   background-image: url('../../images/fr.svg');
+}
+
+.ace{
+  height: 10px;
+  background-size: 100% 100%;
+  background-image: url('../../images/ace.svg');
+}
+
+.ace_flag{
+  border-radius: 100px 100px 10px 0px;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+  width: 50px;
+  left: 0
 }
 
 .hover-opacity{
@@ -203,6 +282,7 @@ body, html {
 	border:none;
 	display:inline-block;
 	padding:0px 8px;
+  margin: 0px 3px 0px 3px;
 	vertical-align:bottom;
 	overflow:hidden;
 	text-decoration:none;
@@ -221,3 +301,27 @@ body, html {
 	background-color:rgba(0,133,161,0.55);
 }
 
+.pdf_button{
+	background-color:rgba(92, 47, 197, 0.55);
+}
+
+.pdf_button:hover{
+	background-color:rgba(63, 32, 133, 0.55);
+}
+
+.download_links{
+  border:none;
+	display:inline-block;
+	vertical-align:bottom;
+	overflow:hidden;
+	text-decoration:none;
+	color:#0095B3;
+}
+
+.download_links:hover{
+  color:#00d5ff;
+}
+
+#img01{opacity: 0;}
+#modal01{opacity: 0;}
+#caption{opacity: 0;}

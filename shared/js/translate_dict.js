@@ -39,6 +39,10 @@ var dict = {
         es: "PASATIEMPOS",
 		fr: "HOBBYIST",
     },
+	"Acceleration of mesoscale currents":{
+		es:"Aceleración de las corrientes de mesoescala",
+		fr:"Accélération des courants méso-échelle"
+	},
     "My skills:":{
         es: "Mis habilidades:",
 		fr: "Mes compétences",
@@ -47,6 +51,16 @@ var dict = {
         es: "Citas",
 		fr: "Citations",
     },
+	"Submitted":{
+		en: "Submitted",
+		es: "Enviado",
+		fr: "Soumis",
+	},
+	"Press":{
+		en: "In press/Published",
+		es: "En prensa/Publicado",
+		fr: "Presse/Publié",
+	},
     "Publications": {
         es: "Publicaciones",
 		fr: "Publications",
@@ -71,6 +85,10 @@ var dict = {
         es: "Ir al inicio!",
 		fr: "Allez au début!",
     },
+	"I'd be happy to hear from you!": {
+        es: "¡Me encantaría saber de ti!",
+		fr: "Je serais heureux de vous entendre!",
+    },
     photo_text: {
         en: "My photograph passion focus on flowers, landscapes and culture.",
         es: "Mi pasión fotográfica se enfoca en flores, paisajes y cultura.",
@@ -83,29 +101,57 @@ var dict = {
 		fr: "VIS COMME SI TU DEVAIS MOURIR DEMAIN. APPRENDS COMME SI TU DEVAIS VIVRE TOUJOURS",
 		
     },
-	"Text 1": {
-		en: "I am Josué Martínez Moreno a Physical Oceanographer interested in oceanic variability and environmental issues, particularly where there is a high impact on population.",
-		es:"Soy Josué Martínez Moreno, un oceanógrafo físico interesado en variabilidad oceanica y problematicas ambientales, particularmente cuando existe in alto impacto en la poblacion.",
-		fr:"Je suis Josué Martínez Moreno, une océanographe physique intéressé par la variabilité océanique et les problèmes environnementaux, en particulier où le impact est élevé sur la population.",
+	"pronouns":{
+		en:"(Pronouns: per/pers) ",
+		es:"",
+		fr:""
 	},
-	"Text 2":{
-		en:"Currently, my PhD research focuses on the effects of climate change over the oceanic kinetic energy and the distinctive mesoscale oceanic processes (eddies and jets). This research is relevant due to a possible feedbacks on oceanic heat and carbon exchange, processes that have direct consequences on the Earth's climate.",
-		es:"Actualmente, mi investigación de doctorado se enfoca en los efectos del cambio climatico sobre la energia cinetica oceanica y los processos de mesosescala caracteristicos del oceano (eddies y jets). Esta investigacion es relevante debido a la posible retroalimentacions en el intercambio térmico y de carbon ocenaico ademas de factibles consecuencias en el clima terrestre.",
-		fr:"Actuellement, ma recherche porte sur les effets du changement climatique sur océanique énergie cinétique et les processus océaniques distinctifs de mésoéchelle (eddies et jets). Cette recherche est pertinente pour un éventuel retour d'information sur la chaleur océanique et les échanges de carbone.",
+	"Text 1":{
+		en: "I am a Physical Oceanographer interested in oceanic variability and environmental issues using satelllite observations, and state-of-the-art ocean and climate models. I am passionate about making science communication more accessible to Earth Scientists and to increase the connections between Earth Scientists and a wider audience, through data visualisation and informing policy makers.",
+		es: "Soy un Oceanógrafo físico interesado en variabilidad oceanica y problemas ambientales usando observaciones satelitales, y modelos numericos oceanicos. Me appasiona hacer comunicacion de la cienca más accesible a científicos de la Tierra y a una audiencia más amplia, a través de visualización de datos e informar a los responsables de la formulación de políticas.",
+		fr: "Je suis un océanographe physique intéressé par la variabilité océanique et les problèmes environnementaux à l'aide d'observations satellitaires et de modèles océaniques et climatiques de pointe. Je suis passionné de rendre la communication scientifique plus accessible aux scientifiques de la Terre et d'accroître les liens entre les scientifiques de la Terre et un public plus large, grâce à la visualisation des données et à l'information des décideurs.",
+	},
+	"Text 2": {
+		en: "I grew up in Mexico City, where I studied Earth Scinces at the National Autonomous University of Mexico. Afterwards, I moved to Canberra, Australia, where I started and continue doing my Ph.D. at the Australian National University under the supervision of <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> on ocean variability, in particular, variability of ocean eddies with scales between 10 to 100 km. On September 2021, I will start a postdoctoral fellow with <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> at IFREMER, Brest, France, to work on sea-ice interactions and ocean heat fluxes in the Artic.",
+		es: "Crecí en la Ciudad de México, donde estudie Ciencias de la Tierra en la Universidad Nacional Autónoma de México. Después, me mude a Canberra, Australia, donde comencé y continuo estudiando my doctorado en la Universidad Nacional Australiana bajo la supervision de <a class='download_links'  href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'>Andy Hogg<\a> en variabilidad oceanica, en particular, variabilidad de eddies oceanicos con escalas de 10 a 100 km. En Septiembre 2021, comenzaré un postdoctorado con <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'>Camille Lique<\a> en IFREMER, Brest, Francia, trabajando en interacciones oceano-hielo y flujos the calor en el Ártico.",
+		fr: "J'ai grandi à Mexico, où j'ai étudié les sciences de la terre à l'Université nationale autonome du Mexique. Ensuite, j'ai déménagé à Canberra, en Australie, où j'ai commencé et je continue à faire mon doctorat. à l'Université nationale australienne sous la supervision de <a class='download_links' href='https://earthsciences.anu.edu.au/people/academics/prof-andy-hogg'> Andy Hogg <\a> sur l'océan la variabilité, en particulier la variabilité des eddies océaniques à des échelles comprises entre 10 et 100 km. En septembre 2021, je commencerai un post-doctorant avec <a class='download_links' href='https://annuaire.ifremer.fr/cv/17781/'> Camille Lique <\a> à l'IFREMER, Brest, France, travailler sur les interactions glace-mer et les flux de chaleur océanique dans l'Arctique.",
 	},
 	"Text 3":{
-		en:"A few years ago, some fortuitous events allowed me to teach science as a volunteer in Mexican rural communities and I loved it! This inspired me to teach as a professor assistant, a demonstrator, and also pursuit an academic career that would allow me to transfer my knowledge through teaching.",
-		es:"Hace unos años, eventos fortuitos me permitieron enseñar ciencia como un voluntarion en comunidades rurales de Mexico. Esto me inspiro mi interes como ayudante de profesor, demostrador, además de una formacion academica que me permita transferir mis conocimientos a traves de la enseñansa.",
-		fr:"Il y a quelques années, événements fortuits m'ont permis d'enseigner les sciences en tant que bénévole dans les communautés rurales mexicaines et j'ai adoré! Cela m'a inspiré à enseigner en tant qu'assistante de professeur, démonstratrice et à poursuivre une formation académique afin de transférer mes connaissances par le biais de l'enseignement.",
+		en: "I spend my free time in nature or doing random projects, from coding to acrylic painting, handmade earrings, and photography. I constantly look for new ways to learn new skills to fulfill my passion for learning.",
+		es: "Dedico mi tiempo libre en la naturaleza o haciendo proyectos aleatorios, programar, pintar, hacer aretes y fotografía. Constantemente busco nuevas formas de aprender nuevas habilidades para satisfacer mi pasión por aprender.",
+		fr: "Je passe mon temps libre dans la nature ou à faire des projets aléatoires, du codage à la peinture acrylique, en passant par les boucles d'oreilles faites à la main et la photographie. Je recherche constamment de nouvelles façons d'acquérir de nouvelles compétences pour répondre à ma passion d'apprendre.",
 	},
 	"Text 4":{
-		en:"I spend my free time on random projects. Sometimes some of these projects are about coding in order to solve problems in my quotidian life, other times are more artistic like acrylic painting, handmade earrings, and photography. I constantly find new ways to learn different skills which fulfil my passion for learning. Additionally, I enjoy spending time in nature: diving, climbing, and other outside activities.",
-		es:"",
-		fr:"Je passe mon temps libre sur des projets aléatoires, parfois certains de ces projets concernent le codage afin de résoudre des problèmes de ma vie quotidienne, d'autres fois sont plus artistiques comme la peinture acrylique, les boucles d'oreilles faites à la main et la photographie. Je me donne constamment de nouvelles façons d’acquérir différentes compétences qui répondent à ma passion pour l’apprentissage. De plus, j'aime passer du temps dans la nature, la plongée, l'escalade et d'autres activités extérieures.",
+		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links local_exit' href='research.html' >my research<\a>.",
+		es: "Descarga mi <a class='download_links' href=../documents/JMM_CV_ESP.pdf>curriculum (CV)<\a> o lee más sobre <a class='download_links local_exit' href='research.html' >mi investigación<\a>.",
+		fr: "Télécharger ma <a class='download_links' href=../documents/JMM_CV_FRA.pdf>vitae (CV)<\a> ou lire plus sur <a class='download_links local_exit' href='research.html' >mes recherches<\a>.",
 	},
-	
-	
-	"example":{
+
+  "Proj_1":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "Proj_2":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "Interest_1":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "To_top":{
+		en: "",
+		es: "",
+		fr: "",
+	},
+
+  "example":{
 		en:"",
 		es:"",
 		fr:"",
@@ -114,12 +160,26 @@ var dict = {
 
 var _t = $('body').translate({lang: "en", t: dict});
 var str = _t.g("translate");
-console.log(str);
+var lang = 'en'
+// console.log(str);
 
 $( ".lang_selector" ).on( "click", function(ev) {
-    var lang = $(this).data()['value'];
+	console.log($(this))
+    lang = $(this).data()['value'];
     _t.lang(lang);
     ev.preventDefault();
+});
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.get('lang')){
+	lang = urlParams.get('lang')
+	_t.lang(lang);
+}
+
+$( ".local_exit" ).on( "click", function(ev) {
+	var local_url = $(this).attr("href")
+	$(this).attr("href", local_url +'?lang='+lang )
 });
 
 // Translate util:
