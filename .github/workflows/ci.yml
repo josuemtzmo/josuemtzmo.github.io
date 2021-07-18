@@ -24,16 +24,17 @@ jobs:
         cp research.html research.bk
         python ./shared/py/update_citations.py
         cmp research.html research.bk
-        cmp --silent research.html research.bk && echo "::set-output name=should_skip::true"
+        cmp --silent research.html research.bk
+        should_skip=$(echo $?)
         rm research.bk
     - name: Commit Files
-      if: ${{ needs.update.outputs.should_skip != true }}
+      if: [ $should_skip -eq 0 ]
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "Add changes" -a
     - name: Push Changes
-      if: ${{ needs.update.outputs.should_skip != true }}
+      if: [ $should_skip -eq 0 ]
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
