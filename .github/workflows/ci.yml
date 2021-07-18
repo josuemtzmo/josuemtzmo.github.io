@@ -23,6 +23,7 @@ jobs:
         python -m pip install scholarly
         cp research.html research.bk
         python ./shared/py/update_citations.py
+        cmp research.html research.bk
         cmp --silent research.html research.bk && echo "::set-output name=should_skip::true"
         rm research.bk
     - name: Commit Files
