@@ -23,6 +23,7 @@ jobs:
         python -m pip install scholarly
         python ./shared/py/update_citations.py
         cat ./research.html
+        cat ./research.html.bk
     - name: Commit Files
       if: ${{ needs.update.outputs.should_skip != true }}
       run: |
