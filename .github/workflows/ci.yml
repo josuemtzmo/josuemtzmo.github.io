@@ -25,17 +25,14 @@ jobs:
         diff research.html research.html.bk
         cmp --silent research.html research.html.bk && echo "::set-output name=should_skip::true"
         rm ./research.html.bk
-  commit:
-    needs: update
-    if: ${{ needs.update.outputs.should_skip != 'true' }}
-    runs-on: ubuntu-latest
-    steps:
-    - id: Ccommit_files
+    - id: Commit_files
+      if: ${{ needs.update.outputs.should_skip != true }}
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "Add changes" -a
     - id: push_changes
+      if: ${{ needs.update.outputs.should_skip != true }}
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
