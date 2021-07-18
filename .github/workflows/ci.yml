@@ -28,8 +28,8 @@ jobs:
         
   
   commit:
-    needs: pre_job
-    if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
+    needs: update
+    if: ${{ needs.update.outputs.should_skip != 'true' }}
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
