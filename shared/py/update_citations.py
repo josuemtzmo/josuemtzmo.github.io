@@ -12,14 +12,8 @@ def replace_string(line_identifier, replacement_string):
     cmd = [
             "sed",
             "-i.bk",
-            "-e",
-            "s'/<\s.*{0}.*/<span class=\"w3-xlarge\">{1}<\/span><br>{0}/g'".format(line_identifier,replacement_string),
-            "research.html", 
-            # s">", "
-            # "research.html.bk",
-            # "&&",
-            # "mv", 
-            # "./research.html.bk ./research.html"
+            "s/<.*{0}.*/<span class=\"w3-xlarge\">{1}<\/span><br>{0}/g".format(line_identifier,replacement_string),
+            "research.html"
         ]
     return cmd
 
@@ -32,6 +26,3 @@ for key,item in replace_lines.items():
     proc = subprocess.run(
         cmd
     )
-
-# if os.path.isfile('./research.html.bk'):
-#     os.remove('./research.html.bk')
