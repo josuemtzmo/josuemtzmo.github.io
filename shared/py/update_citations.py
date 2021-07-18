@@ -21,6 +21,7 @@ def replace_string(line_identifier, replacement_string):
 replace_lines = {"<!--Cit-->": citedby, "<!--Pub-->": publications}
 
 for key,item in replace_lines.items():
+    print("Key",key," item:",item)
     cmd = replace_string(key, item)
 
     proc = subprocess.run(
