@@ -25,6 +25,3 @@ for key,item in replace_lines.items():
     proc = subprocess.run(
         cmd
     )
-
-if os.path.isfile('./research.html.bk'):
-    os.remove('./research.html.bk')
