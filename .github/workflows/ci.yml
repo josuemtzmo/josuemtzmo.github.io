@@ -23,7 +23,6 @@ jobs:
         python -m pip install scholarly
         python ./shared/py/update_citations.py
         cat ./research.html
-        cmp --silent research.html research.html.bk && echo "::set-output name=should_skip::true"
     - name: Commit Files
       if: ${{ needs.update.outputs.should_skip != true }}
       run: |
