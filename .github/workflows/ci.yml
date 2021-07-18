@@ -7,19 +7,29 @@ on:
     - cron: "0 0 * * *" #Runs at the end everyday.
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
+    outputs:
+      should_skip: ${{ steps.update_citations.outputs.should_skip }}
     steps:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Update citations
+    - id: update_citations
       run: |
         python --version
         pip install git+https://github.com/josuemtzmo/fake-useragent.git
         python -m pip install scholarly
         python ./shared/py/update_citations.py
+        diff research.html research.html.bk
+        cmp --silent research.html research.html.bk && echo "::set-output name=should_skip::true"
+        rm ./research.html.bk
+        
+  
+  commit:
+    needs: pre_job
+    if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
