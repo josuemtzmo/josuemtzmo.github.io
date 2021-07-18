@@ -17,6 +17,7 @@ jobs:
     - name: Update citations
       run: |
         python --version
+        pip install git+https://github.com/josuemtzmo/fake-useragent.git
         python -m pip install scholarly
         python ./shared/py/update_citations.py
     - name: Commit files
