@@ -16,6 +16,7 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Update citations
       run: |
+        python --version
         python -m pip install scholarly
         python ./shared/py/update_citations.py
     - name: Commit files
