@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "*/15 * * * *" #Runs every 15 min everyday.
+    - cron: "27 2 * * *" #Runs every day at 2:27 UTC.
 
 jobs:
   update:
