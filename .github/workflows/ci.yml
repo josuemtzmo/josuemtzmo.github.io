@@ -16,24 +16,24 @@ jobs:
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - id: update_citations
+    - name Update Citations
       run: |
         python --version
         pip install git+https://github.com/josuemtzmo/fake-useragent.git
         python -m pip install scholarly
         python ./shared/py/update_citations.py
-        diff research.html research.html.bk
         cmp research.html research.html.bk
         cmp --silent research.html research.html.bk && echo "::set-output name=should_skip::true"
+        cat ./research.html
         cat ./research.html.bk
         rm ./research.html.bk
-    - id: Commit_files
+    - name: Commit Files
       if: ${{ needs.update.outputs.should_skip != true }}
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "Add changes" -a
-    - id: push_changes
+    - name: Push Changes
       if: ${{ needs.update.outputs.should_skip != true }}
       uses: ad-m/github-push-action@master
       with:
