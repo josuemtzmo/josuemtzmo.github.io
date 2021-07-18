@@ -12,6 +12,7 @@ def replace_string(line_identifier, replacement_string):
     cmd = [
             "sed",
             "-i.bk",
+            "-e",
             "s'/<\s.*{0}.*/<span class=\"w3-xlarge\">{1}<\/span><br>{0}/g'".format(line_identifier,replacement_string),
             "research.html", 
             # s">", "
