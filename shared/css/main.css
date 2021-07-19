@@ -30,6 +30,10 @@ b{
   background-size: cover;
 }
 
+.bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6{
+  margin-top:81px
+}
+
 .bgimg-1 {
   background-image: url('../../images/snow_rv_investigator.jpg');
   min-height: 100vh;
