@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "27 2 * * *" #Runs every day at 2:27 UTC.
+    - cron: "27 2 * * 1" #Runs every Monday at 2:27 UTC.
 
 jobs:
   update:
@@ -26,6 +26,7 @@ jobs:
         cmp research.html research.bk && echo "Files are identical"
         should_skip=1
         cmp --silent research.html research.bk && should_skip=0
+        echo $should_skip
         rm research.bk
       env:
         should_skip: $(echo $should_skip)
