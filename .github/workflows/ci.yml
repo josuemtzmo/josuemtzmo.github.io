@@ -29,6 +29,10 @@ jobs:
         rm research.bk
       env:
         should_skip: $(echo $should_skip)
+    - name: Check skip
+      run: | 
+        echo ${{ env.should_skip }}
+        echo ${{ env.should_skip !=0 }}
     - name: Commit Files
       if: ${{ env.should_skip != 0 }}
       run: |
