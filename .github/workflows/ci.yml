@@ -23,8 +23,7 @@ jobs:
         python -m pip install scholarly
         cp research.html research.bk
         python ./shared/py/update_citations.py
-        cmp research.html research.bk && echo "Files are identical"
-        cmp --silent research.html research.bk
+        cmp --silent research.html research.bk && echo "Files are identical"
         should_skip=$(echo $?)
         echo $should_skip
         rm research.bk
