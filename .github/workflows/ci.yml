@@ -25,11 +25,10 @@ jobs:
         python ./shared/py/update_citations.py
         cmp --silent research.html research.bk && echo "Files are identical"
         should_skip=$(echo $?)
-        echo $should_skip
+        echo "should_skip=$should_skip" >> $GITHUB_ENV
         rm research.bk
       env:
         should_skip: $(echo $should_skip)
-        test: test
     - name: Check skip
       run: | 
         echo ${{ env.should_skip }}
