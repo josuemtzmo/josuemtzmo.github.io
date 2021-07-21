@@ -25,7 +25,9 @@ jobs:
         python ./shared/py/update_citations.py
         cmp research.html research.bk && echo "Files are identical"
         should_skip=0
+        echo $should_skip
         cmp --silent research.html research.bk && should_skip=1
+        echo $?
         echo $should_skip
         rm research.bk
       env:
