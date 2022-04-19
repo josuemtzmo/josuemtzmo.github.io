@@ -17,7 +17,7 @@ var dict = {
     },
     "ABOUT ME": {
        es: "ACERCA DE MI",
-	   fr: "UN PEU DE MOI",
+	   fr: "UN PEUX DE MOI",
     },
     "RESEARCH": {
        es: "INVESTIGACIÓN",
