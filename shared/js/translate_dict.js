@@ -1,7 +1,7 @@
 var dict = {
 	"About me": { 
 	   es: "Acerca de mi",
-	   fr: "Un pue de moi",
+	   fr: "Un puex de moi",
 	},
 	"Research": {
        es: "Investigación",
