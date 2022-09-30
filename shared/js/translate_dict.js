@@ -1,7 +1,7 @@
 var dict = {
 	"About me": { 
 	   es: "Acerca de mi",
-	   fr: "Un puex de moi",
+	   fr: "Un peux de moi",
 	},
 	"Research": {
        es: "Investigación",
@@ -39,6 +39,10 @@ var dict = {
         es: "PASATIEMPOS",
 		fr: "HOBBYIST",
     },
+	"SCIENCE VISUALIZATION":{
+		es:"VISUALIZACIÓN CIENTIFICA",
+		fr:"VISUALISATION SCIENTIFIQUE",
+	},
 	"Acceleration of mesoscale currents":{
 		es:"Aceleración de las corrientes de mesoescala",
 		fr:"Accélération des courants méso-échelle"
