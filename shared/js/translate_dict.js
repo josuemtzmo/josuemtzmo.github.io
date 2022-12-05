@@ -126,9 +126,9 @@ var dict = {
 		fr: "Je passe mon temps libre dans la nature ou à faire des projets aléatoires, du codage à la peinture acrylique, en passant par les boucles d'oreilles faites à la main et la photographie. Je recherche constamment de nouvelles façons d'acquérir de nouvelles compétences pour répondre à ma passion d'apprendre.",
 	},
 	"Text 4":{
-		en: "Download my <a class='download_links' href=../documents/JMM_CV_ENG.pdf>vitae (CV)<\a> or read more about <a class='download_links local_exit' href='research.html' >my research<\a>.",
-		es: "Descarga mi <a class='download_links' href=../documents/JMM_CV_ESP.pdf>curriculum (CV)<\a> o lee más sobre <a class='download_links local_exit' href='research.html' >mi investigación<\a>.",
-		fr: "Télécharger ma <a class='download_links' href=../documents/JMM_CV_FRA.pdf>vitae (CV)<\a> ou lire plus sur <a class='download_links local_exit' href='research.html' >mes recherches<\a>.",
+		en: "<a class='download_links' href=../documents/JMM_CV_ENG.pdf> Download<\a> or <a class='download_links' href=cv.html>visit<\a> my curriculum vitae (CV) or read more about <a class='download_links local_exit' href='research.html' >my research<\a>.",
+		es: "<a class='download_links' href=../documents/JMM_CV_ESP.pdf>Descarga<\a> o visita mi curriculum (CV) o lee más sobre <a class='download_links local_exit' href='research.html' >mi investigación<\a>.",
+		fr: "<a class='download_links' href=../documents/JMM_CV_FRA.pdf>Télécharger<\a> ou visiter ma Curriculum vitae (CV) ou lire plus sur <a class='download_links local_exit' href='research.html' >mes recherches<\a>.",
 	},
 
   "Proj_1":{
