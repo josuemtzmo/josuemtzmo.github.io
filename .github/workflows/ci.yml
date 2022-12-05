@@ -19,8 +19,8 @@ jobs:
     - name: Update Citations
       run: |
         python --version
-        pip install git+https://github.com/josuemtzmo/fake-useragent.git
         python -m pip install scholarly
+        python -m pip install fake-useragent==1.1.1
         cp research.html research.bk
         python ./shared/py/update_citations.py
         cmp --silent research.html research.bk && echo "Files are identical"
