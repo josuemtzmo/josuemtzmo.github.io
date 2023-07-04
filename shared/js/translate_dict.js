@@ -65,6 +65,11 @@ var dict = {
 		es: "En prensa/Publicado",
 		fr: "Presse/Publié",
 	},
+	"Presentation":{
+		en: "Presentations/Seminars",
+		es: "Presentaciones/Seminarios",
+		fr: "Présentations/Séminaires",
+	},
     "Publications": {
         es: "Publicaciones",
 		fr: "Publications",
