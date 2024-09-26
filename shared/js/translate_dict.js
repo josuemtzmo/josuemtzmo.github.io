@@ -15,9 +15,17 @@ var dict = {
         es: "Contacto",
 		fr: "Contact",
     },
+	"Portfolio": {
+       es: "Portafolio",
+	   fr: "Portfolio",
+    },
     "ABOUT ME": {
        es: "ACERCA DE MI",
-	   fr: "UN PEUX DE MOI",
+	   fr: "À PROPOS DE MOI",
+    },
+	"PORTFOLIO": {
+       es: "PORTAFOLIO",
+	   fr: "PORTFOLIO",
     },
     "RESEARCH": {
        es: "INVESTIGACIÓN",
