@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="gr__w3schools_com"><head><title> Josué | Oceanographer </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="shared/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  type='text/javascript' href="shared/js/interaction.js">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="shared/js/translate.js"></script>
+	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']]
+			}
+		};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    </head>
+    <body class="w3-light-grey" data-gr-c-s-loaded="true">
+        <!-- Navbar (sit on top) -->
+        <nav class="w3-white w3-animate-down w3-text-grey w3-collapse w3-center langmenu" style="display: none" id="myLangmenu">
+            <div class="languages">
+                <a class="w3-button w3-round lang_selector" role="button" data-value="en" id="language" name="english">EN <div class="au"></div> </a>
+                <a class="w3-button w3-round lang_selector" role="button" data-value="es" id="language" name="espanol">ES <div class="mx"></div> </a>
+                <a class="w3-button w3-round lang_selector" role="button" data-value="fr" id="language" name="francais">FR <div class="fr"></div> </a>
+                <!-- <a class="w3-button w3-round lang_selector" role="button" data-value="" id="language" name="francais">ACE <div class="ace"></div> </a> -->
+            </div>
+        </nav>
+
+        <div class="w3-main">
+            <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16" style="z-index:5">
+                <a href="index.html" class="w3-left w3-large local_exit">
+                    <img src="./images/me_face.png" class="w3-left w3-round w3-image" alt="Photo of Me" width="50" height="50">
+                </a>
+                
+                <div class="w3-center">
+                    <div class="w3-hide-small" style="width:80vw; position:relative;display: inline">
+                    
+                        <a href="about.html" onclick="w3_lang_close()" class="w3-button w3-large trn">About me</a> 
+                        <a href="research.html" onclick="w3_lang_close()" class="w3-button w3-large trn local_exit">Research</a> 
+                        <a href="#portafolio" onclick="w3_lang_close()" class="w3-button w3-large trn local_exit">Portfolio</a>
+                        <a href="hobbies.html" onclick="w3_lang_close()" class="w3-button w3-large trn local_exit">Hobbies</a> 
+                        <a href="contact.html" onclick="w3_lang_close()" class="w3-button w3-large trn local_exit">Contact</a>
+                    </div>
+                    <a href="javascript:void(0)" class="w3-button w3-large w3-right" onclick="w3_lang()" id="lang-button">
+                        <i class="fa fa-language fa-fw" id="LangIcon"></i>
+                    </a>
+                </div>
+            </header>
+
+            <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_lang_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+            <!-- Container (About Section) -->
+            <div class="bgimg-9 w3-display-container w3-opacity-min w3-dark-grey" id="portfolio">
+                <div class="w3-display-middle">
+                    <span class="w3-xxlarge w3-text-white w3-wide trn">PORTFOLIO</span>
+                </div>
+            </div>
+            <div class="w3-row w3-center w3-padding-16 column_images">
+                <div class="w3-col w3-section m6">
+                    
+                    <img src="./images/SEDNA_arctic.png" class="no-opacity" alt="Visualization of the Rossby Number of SEDNA, a 1/60° pan-Arctic Simulation.">
+                    <p class="w3-center">
+                        Visualization of the Rossby Number and ice edge of SEDNA, a 1/60° pan-Arctic Simulation. <br> <a href="https://youtube.com/shorts/EgeyMISohw0?feature=share" target="_blank"> Click to watch animation.</a>
+                    </p>
+                </div>
+                <div class="w3-col w3-section m6">
+                    <img src="./images/mld_ACCESS.png" class="no-opacity" alt="Visualization of the Mixed layer depth in ACCESS-OM2, a 1/10° global ocean simulation. Watch animation in https://www.youtube.com/watch?v=9vPr_PlYhvg"">
+                    <p class="w3-center">
+                        Visualization of the Mixed layer depth in ACCESS-OM2, a 1/10° global ocean simulation. 
+                        <br> <a href="https://www.youtube.com/watch?v=9vPr_PlYhvg" target="_blank"> Click to watch animation.</a>
+                    </p>
+                </div>
+                <div class="w3-col w3-section m6">
+                    
+                    <img src="./images/snapshot_rossby.png" class="no-opacity" alt="Visualization of the Rossby Number of a single eddy interacting with sea ice, using Oceananigans at 200m resolution.">
+                    <p class="w3-center">
+                        Visualization of the Rossby Number of a single eddy interacting with sea ice, using <a href="https://clima.github.io/OceananigansDocumentation/stable/"  target="_blank"> Oceananigans</a> at 200m resolution.
+                    </p>
+                </div>
+                <div class="w3-col w3-section m6">
+                    <img src="./images/Channel_shoes_box.png" class="no-opacity" alt="Visualization of 3 idealized simulations to study the interactions between eddies and sea ice in NEMO.">
+                    <p class="w3-center">
+                        Visualization of 3 idealized simulations to study the interactions between eddies and sea ice in NEMO.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click
+        <div id="modal01" class="w3-modal w3-black" onclick="hideModal(this)">
+            <span class="w3-button w3-large w3-dark-grey w3-display-topright" title="Close Modal Image">
+                <i class="fa fa-remove">
+
+                </i>
+            </span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large"></p>
+            </div>
+        </div> -->
+
+        <script src="shared/js/interaction.js"></script>
+        <script src="shared/js/translate_dict.js"></script>
+
+    </body>
+</html>
+    
