@@ -1,13 +1,31 @@
-from scholarly import scholarly
+# from scholarly import scholarly
 import subprocess
 import os
 import platform
+import wget 
+import re
 
-search_query = scholarly.search_author('Josue Martinez Moreno')
-data = scholarly.fill(next(search_query), sections=['basics', 'indices', 'publications'])
+# search_query = scholarly.search_author('Josue Martinez Moreno')
+# data = scholarly.fill(next(search_query), sections=['basics', 'indices', 'publications'])
 
-citedby = data['citedby']
-publications = len(data['publications'])
+# citedby = data['citedby']
+# publications = len(data['publications'])
+
+## Hacky way to get the number of citations and publications from google scholar.
+url = "https://scholar.google.com/citations?user=gdPeyQ4AAAAJ&hl=en&oi=ao"
+filename = wget.download(url)
+
+with open(filename, 'r', encoding="ISO-8859-1") as file:
+    content = file.read()
+
+
+citedby = content.split('Citations</a></td><td class="gsc_rsb_std">')[1].split('<')[0]
+
+# papers_class = content.split('<tr class="gsc_a_tr">')[1:]
+
+papers_class = content.split('<div class="gsc_rsb_m"><div class="gsc_rsb_m_a"><span>')[1].split('<')[0]
+
+publications = int(re.findall(r'\d+', papers_class)[0]) + 1
 
 sed_edit = ''
 if platform.system() == "Darwin":
