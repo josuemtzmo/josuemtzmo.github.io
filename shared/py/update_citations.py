@@ -12,30 +12,33 @@ import re
 
 ## Hacky way to get the number of citations and publications from google scholar.
 
-from urllib.request import Request, urlopen
+import urllib.request as urllib2
+import http.cookiejar as cookielib
+
+def get_page(url):
+    filename = "cookies.txt"  
+    hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+        'Accept-Encoding': 'none',
+        'Accept-Language': 'en-US,en;q=0.8',
+        'Connection': 'keep-alive'}
+
+    request = urllib2.Request(url, None, hdr)
+    cookies = cookielib.MozillaCookieJar(filename, None, None)
+    cookies.load()
+    cookie_handler= urllib2.HTTPCookieProcessor(cookies)
+    redirect_handler= urllib2.HTTPRedirectHandler()
+    opener = urllib2.build_opener(redirect_handler,cookie_handler)
+    response = opener.open(request)
+    return response.read()
+
 
 url = "https://scholar.google.com/citations?user=gdPeyQ4AAAAJ&hl=en&oi=ao"
 
-hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-       'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-       'Accept-Encoding': 'none',
-       'Accept-Language': 'en-US,en;q=0.8',
-       'Connection': 'keep-alive'}
-
-req = Request(
-    url=url, 
-    headers=hdr
-)
-webpage = urlopen(req).read()
+webpage = get_page(url)
 
 content = str(webpage, 'ISO-8859-1')
-
-# filename = wget.download(url)
-
-# with open(filename, 'r', encoding="ISO-8859-1") as file:
-    # content = file.read()
-
 
 citedby = content.split('Citations</a></td><td class="gsc_rsb_std">')[1].split('<')[0]
 

@@ -21,7 +21,7 @@ jobs:
         python --version
         python -m pip install scholarly
         python -m pip install fake-useragent==2.2.0
-        python -m pip install wget
+        echo "# Netscape HTTP Cookie File\n" > cookies.txt
         cp research.html research.bk
         python ./shared/py/update_citations.py
         cmp --silent research.html research.bk && echo "Files are identical"
