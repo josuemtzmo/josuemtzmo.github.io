@@ -2,7 +2,6 @@
 import subprocess
 import os
 import platform
-import wget 
 import re
 
 # search_query = scholarly.search_author('Josue Martinez Moreno')
@@ -12,11 +11,23 @@ import re
 # publications = len(data['publications'])
 
 ## Hacky way to get the number of citations and publications from google scholar.
-url = "https://scholar.google.com/citations?user=gdPeyQ4AAAAJ&hl=en&oi=ao"
-filename = wget.download(url)
 
-with open(filename, 'r', encoding="ISO-8859-1") as file:
-    content = file.read()
+from urllib.request import Request, urlopen
+
+url = "https://scholar.google.com/citations?user=gdPeyQ4AAAAJ&hl=en&oi=ao"
+
+req = Request(
+    url=url, 
+    headers={'User-Agent': 'Mozilla/5.0'}
+)
+webpage = urlopen(req).read()
+
+content = str(webpage, 'ISO-8859-1')
+
+# filename = wget.download(url)
+
+# with open(filename, 'r', encoding="ISO-8859-1") as file:
+    # content = file.read()
 
 
 citedby = content.split('Citations</a></td><td class="gsc_rsb_std">')[1].split('<')[0]
