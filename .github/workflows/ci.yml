@@ -18,16 +18,17 @@ jobs:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Update Citations
       run: |
-        python --version
-        python -m pip install scholarly
-        python -m pip install fake-useragent==2.2.0
-        echo "# Netscape HTTP Cookie File\n" > cookies.txt
-        cp research.html research.bk
-        python ./shared/py/update_citations.py
-        cmp --silent research.html research.bk && echo "Files are identical"
-        should_skip=$(echo $?)
-        echo "should_skip=$should_skip" >> $GITHUB_ENV
-        rm research.bk
+        # python --version
+        # python -m pip install scholarly
+        # python -m pip install fake-useragent==2.2.0
+        # echo "# Netscape HTTP Cookie File\n" > cookies.txt
+        # cp research.html research.bk
+        # python ./shared/py/update_citations.py
+        # cmp --silent research.html research.bk && echo "Files are identical"
+        # should_skip=$(echo $?)
+        # echo "should_skip=$should_skip" >> $GITHUB_ENV
+        # rm research.bk
+        should_skip=0
       env:
         should_skip: $(echo $should_skip)
     - name: Check skip
