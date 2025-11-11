@@ -1,2 +1,1 @@
-# Netscape HTTP Cookie File
-
+# Netscape HTTP Cookie File\n
